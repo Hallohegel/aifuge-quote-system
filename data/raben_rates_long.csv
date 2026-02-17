@@ -1,0 +1,9 @@
+scope,country,zone,w_from,w_to,price
+EU,Polen,1,0,300,68.35
+EU,Polen,1,300,800,111.12
+EU,Bulgarien,1,0,300,123.04
+EU,Bulgarien,1,300,800,172.86
+EU,Lettland,1,0,300,72.98
+EU,Lettland,1,300,800,104.35
+DE,Deutschland,1,0,300,60.00
+DE,Deutschland,1,300,800,95.00
