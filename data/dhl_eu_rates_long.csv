@@ -1,7 +1,7 @@
-country_code,zone,weight_max,price
-PL,1,300,110
-PL,1,700,160
-BG,1,300,123
-BG,1,700,190
-LV,1,300,95
-LV,1,700,140
+country_code,zone,w_from,w_to,price
+PL,1,0,300,110
+PL,1,300,700,160
+BG,1,0,300,123
+BG,1,300,700,190
+LV,1,0,300,95
+LV,1,300,700,140
