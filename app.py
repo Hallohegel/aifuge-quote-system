@@ -1,145 +1,97 @@
 import streamlit as st
 import pandas as pd
-import os
 
 st.set_page_config(page_title="Aifuge Quote System", layout="wide")
 
-# -----------------------------
-# 加载数据
-# -----------------------------
-DATA_PATH = "data"
-
-def load_csv(filename):
-    return pd.read_csv(os.path.join(DATA_PATH, filename))
-
-dhl_de_zone = load_csv("dhl_de_plz2_zone.csv")
-dhl_de_rates = load_csv("dhl_de_rates.csv")
-dhl_eu_zone = load_csv("dhl_eu_zone_map.csv")
-dhl_eu_rates = load_csv("dhl_eu_rates_long.csv")
-raben_zone = load_csv("raben_zone_map.csv")
-raben_rates = load_csv("raben_rates_long.csv")
-raben_diesel = load_csv("raben_diesel_floater.csv")
-
-# -----------------------------
-# 标题
-# -----------------------------
 st.title("🚛 Aifuge 双承运商报价系统（生产版）")
 
-# -----------------------------
-# 侧边栏参数
-# -----------------------------
+# ===== 侧边参数 =====
 st.sidebar.header("⚙ 参数")
 
 dhl_fuel = st.sidebar.number_input("DHL Fuel %", value=0.12)
-dhl_security = st.sidebar.number_input("DHL Sicherheitszuschlag %", value=0.00)
-
 raben_daf = st.sidebar.number_input("Raben DAF %", value=0.10)
-raben_mob = st.sidebar.number_input("Raben Mobilitäts-Floater %", value=0.029)
-raben_adr_fee = st.sidebar.number_input("Raben ADR Fee €", value=12.5)
-raben_avis_fee = st.sidebar.number_input("Raben Avis Fee €", value=12.0)
-raben_ins_min = st.sidebar.number_input("Raben Insurance Min €", value=5.95)
 
-# -----------------------------
-# 输入区
-# -----------------------------
+# ===== 输入区 =====
 st.header("📦 输入")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    scope = st.selectbox("Scope (DE/EU)", ["DE", "EU"])
+    scope = st.selectbox("Scope", ["DE", "EU"])
+    country = st.text_input("Destination Country", value="Deutschland")
 
 with col2:
     weight = st.number_input("Actual Weight (kg)", value=200.0)
 
 with col3:
-    packaging = st.selectbox("Packaging Type", ["Europalette"])
+    plz = st.text_input("Destination PLZ (前2位)", value="38")
 
-if scope == "DE":
-    dest_plz = st.text_input("Destination PLZ (前2位)", value="38")[:2]
-    dest_country = "DE"
-else:
-    dest_country = st.selectbox("Destination Country", dhl_eu_zone["country_code"].unique())
-    dest_plz = st.text_input("Destination PLZ (前2位)", value="44")[:2]
-
-adr = st.checkbox("ADR (危险品)")
-avis = st.checkbox("Avis 预约派送")
-insurance_value = st.number_input("Insurance Value €", value=0.0)
-
-# -----------------------------
-# 计算按钮
-# -----------------------------
 if st.button("💰 计算报价"):
 
-    st.header("📊 结果（Netto）")
-
-    # =========================
-    # DHL 计算
-    # =========================
     try:
-        if scope == "DE":
-            zone_row = dhl_de_zone[dhl_de_zone["plz2"] == int(dest_plz)]
-            zone = zone_row.iloc[0]["zone"]
-            rate_row = dhl_de_rates[
-                (dhl_de_rates["zone"] == zone) &
-                (dhl_de_rates["weight_from"] <= weight) &
-                (dhl_de_rates["weight_to"] >= weight)
-            ]
+        # ===== 读取数据 =====
+        raben_zone = pd.read_csv("data/raben_zone_map.csv")
+        raben_rates = pd.read_csv("data/raben_rates_long.csv")
+        dhl_zone = pd.read_csv("data/dhl_de_plz2_zone.csv")
+        dhl_rates = pd.read_csv("data/dhl_de_rates.csv")
+
+        # ==============================
+        # RABEN
+        # ==============================
+
+        rz = raben_zone[
+            (raben_zone["scope"] == scope) &
+            (raben_zone["country"] == country) &
+            (raben_zone["plz"].astype(str) == plz)
+        ]
+
+        if rz.empty:
+            st.error("Raben: 无法匹配分区")
         else:
-            zone_row = dhl_eu_zone[
-                (dhl_eu_zone["country_code"] == dest_country) &
-                (dhl_eu_zone["plz2"] == int(dest_plz))
+            zone = rz.iloc[0]["zone"]
+
+            rr = raben_rates[
+                (raben_rates["scope"] == scope) &
+                (raben_rates["country"] == country) &
+                (raben_rates["zone"] == zone) &
+                (raben_rates["w_from"] <= weight) &
+                (raben_rates["w_to"] > weight)
             ]
-            zone = zone_row.iloc[0]["zone"]
-            rate_row = dhl_eu_rates[
-                (dhl_eu_rates["zone"] == zone) &
-                (dhl_eu_rates["weight_from"] <= weight) &
-                (dhl_eu_rates["weight_to"] >= weight)
-            ]
 
-        base = rate_row.iloc[0]["rate"]
-        total = base * (1 + dhl_fuel + dhl_security)
+            if rr.empty:
+                st.error("Raben: 无法匹配重量段")
+            else:
+                base_price = rr.iloc[0]["price"]
+                total = base_price * (1 + raben_daf)
 
-        st.subheader("DHL Freight")
-        st.success(f"€ {round(total,2)}")
+                st.success(f"Raben 价格: {round(total,2)} €")
 
-    except:
-        st.subheader("DHL Freight")
-        st.error("DHL：无法匹配分区或重量段")
+        # ==============================
+        # DHL (只处理 DE)
+        # ==============================
 
-    # =========================
-    # Raben 计算
-    # =========================
-    try:
-        zone_row = raben_zone[
-            (raben_zone["country_code"] == dest_country) &
-            (raben_zone["plz2"] == int(dest_plz))
-        ]
-        zone = zone_row.iloc[0]["zone"]
+        if scope == "DE":
 
-        rate_row = raben_rates[
-            (raben_rates["zone"] == zone) &
-            (raben_rates["weight_from"] <= weight) &
-            (raben_rates["weight_to"] >= weight)
-        ]
+            dz = dhl_zone[dhl_zone["plz"].astype(str) == plz]
 
-        base = rate_row.iloc[0]["rate"]
+            if dz.empty:
+                st.error("DHL: 无法匹配分区")
+            else:
+                zone = dz.iloc[0]["zone"]
 
-        total = base * (1 + raben_daf + raben_mob)
+                dr = dhl_rates[
+                    (dhl_rates["zone"] == zone) &
+                    (dhl_rates["w_from"] <= weight) &
+                    (dhl_rates["w_to"] > weight)
+                ]
 
-        if adr:
-            total += raben_adr_fee
+                if dr.empty:
+                    st.error("DHL: 无法匹配重量段")
+                else:
+                    base_price = dr.iloc[0]["price"]
+                    total = base_price * (1 + dhl_fuel)
 
-        if avis:
-            total += raben_avis_fee
+                    st.success(f"DHL 价格: {round(total,2)} €")
 
-        if insurance_value > 0:
-            insurance = max(insurance_value * 0.003, raben_ins_min)
-            total += insurance
-
-        st.subheader("Raben")
-        st.success(f"€ {round(total,2)}")
-
-    except:
-        st.subheader("Raben")
-        st.error("Raben：无法匹配分区或重量段")
+    except Exception as e:
+        st.error(f"系统错误: {e}")
