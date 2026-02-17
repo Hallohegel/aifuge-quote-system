@@ -6,428 +6,279 @@ import pandas as pd
 import streamlit as st
 
 
-# =========================
-# 基础配置
-# =========================
-st.set_page_config(
-    page_title="Aifuge 双承运商报价系统（生产版）",
-    page_icon="🚚",
-    layout="wide",
-)
-
 DATA_DIR = Path("data")
 
-FILES = {
-    "params": DATA_DIR / "params_default.json",
-    "dhl_de_plz2_zone": DATA_DIR / "dhl_de_plz2_zone.csv",
-    "dhl_de_rates": DATA_DIR / "dhl_de_rates.csv",
-    "dhl_eu_zone_map": DATA_DIR / "dhl_eu_zone_map.csv",
-    "dhl_eu_rates_long": DATA_DIR / "dhl_eu_rates_long.csv",
-    "raben_zone_map": DATA_DIR / "raben_zone_map.csv",
-    "raben_rates_long": DATA_DIR / "raben_rates_long.csv",
-}
+# ----------------------------
+# Helpers
+# ----------------------------
+def load_csv(name: str) -> pd.DataFrame:
+    p = DATA_DIR / name
+    if not p.exists():
+        raise FileNotFoundError(f"Missing file: {p}")
+    return pd.read_csv(p)
 
-
-# =========================
-# 工具函数
-# =========================
-def _safe_read_csv(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        return pd.DataFrame()
+def load_params_default() -> dict:
+    p = DATA_DIR / "params_default.json"
+    if not p.exists():
+        return {}
     try:
-        return pd.read_csv(path)
+        return json.loads(p.read_text(encoding="utf-8"))
     except Exception:
-        # 兼容一些csv分隔符/编码问题
-        try:
-            return pd.read_csv(path, sep=";")
-        except Exception:
-            return pd.DataFrame()
+        return {}
 
+def norm_plz2(x: str) -> str:
+    s = str(x or "").strip()
+    s = re.sub(r"\D", "", s)  # keep digits
+    if len(s) >= 2:
+        return s[:2]
+    return s.zfill(2) if s else ""
 
-@st.cache_data(show_spinner=False)
-def load_all_data():
-    params = {}
-    if FILES["params"].exists():
-        try:
-            params = json.loads(FILES["params"].read_text(encoding="utf-8"))
-        except Exception:
-            params = {}
-
-    dhl_de_plz2_zone = _safe_read_csv(FILES["dhl_de_plz2_zone"])
-    dhl_de_rates = _safe_read_csv(FILES["dhl_de_rates"])
-    dhl_eu_zone_map = _safe_read_csv(FILES["dhl_eu_zone_map"])
-    dhl_eu_rates_long = _safe_read_csv(FILES["dhl_eu_rates_long"])
-    raben_zone_map = _safe_read_csv(FILES["raben_zone_map"])
-    raben_rates_long = _safe_read_csv(FILES["raben_rates_long"])
-
-    return (
-        params,
-        dhl_de_plz2_zone,
-        dhl_de_rates,
-        dhl_eu_zone_map,
-        dhl_eu_rates_long,
-        raben_zone_map,
-        raben_rates_long,
-    )
-
-
-def normalize_plz2(x: str) -> str:
-    """取前2位数字（允许用户输入 38110 / 38 / '44xxx'）"""
-    s = str(x).strip()
-    m = re.search(r"\d{2}", s)
-    return m.group(0) if m else ""
-
-
-def normalize_country_input(s: str):
+def norm_country_code(x: str) -> str:
     """
-    把用户输入的国家（PL/Polen/Poland/Deutschland/Germany 等）统一成：
-    - country_code: 'PL' / 'DE' / 'BG' / 'LV' ...
-    - raben_country_name: 用于匹配 raben_zone_map / raben_rates_long 的 country 字段
-    注意：你现有CSV里 Raben 使用的是 'Polen'/'Deutschland'/'Bulgarien'/'Lettland' 这种德语名
+    Accept: 'PL', 'Polen', 'Poland', 'Deutschland', 'Germany', etc.
+    Return: ISO2 like 'PL', 'DE', ...
     """
-    raw = (s or "").strip()
-    u = raw.upper()
+    s = str(x or "").strip()
+    if not s:
+        return ""
+
+    # If user directly inputs ISO2
+    if re.fullmatch(r"[A-Za-z]{2}", s):
+        return s.upper()
+
+    key = s.lower().strip()
 
     mapping = {
-        # 德国
-        "DE": ("DE", "Deutschland"),
-        "DEUTSCHLAND": ("DE", "Deutschland"),
-        "GERMANY": ("DE", "Deutschland"),
-        # 波兰
-        "PL": ("PL", "Polen"),
-        "POLEN": ("PL", "Polen"),
-        "POLAND": ("PL", "Polen"),
-        "POLSKA": ("PL", "Polen"),
-        # 保加利亚
-        "BG": ("BG", "Bulgarien"),
-        "BULGARIA": ("BG", "Bulgarien"),
-        "BULGARIEN": ("BG", "Bulgarien"),
-        # 拉脱维亚
-        "LV": ("LV", "Lettland"),
-        "LATVIA": ("LV", "Lettland"),
-        "LETTLAND": ("LV", "Lettland"),
+        # DE
+        "deutschland": "DE", "germany": "DE", "de": "DE",
+        # PL
+        "polen": "PL", "poland": "PL", "pl": "PL",
+        # BG
+        "bulgarien": "BG", "bulgaria": "BG", "bg": "BG",
+        # LV
+        "lettland": "LV", "latvia": "LV", "lv": "LV",
+        # NL
+        "niederlande": "NL", "netherlands": "NL", "holland": "NL", "nl": "NL",
+        # FR
+        "frankreich": "FR", "france": "FR", "fr": "FR",
+        # IT
+        "italien": "IT", "italy": "IT", "it": "IT",
+        # ES
+        "spanien": "ES", "spain": "ES", "es": "ES",
+        # add more if you want
     }
 
-    key = u.replace(" ", "")
-    if key in mapping:
-        return mapping[key]
+    return mapping.get(key, "")
 
-    # 如果用户直接输入了 Raben CSV 的 country（如 Polen/Deutschland），尽量推断
-    # 否则就把 country_code 留空，但 raben_country_name 用原始输入
-    if raw.lower() == "deutschland":
-        return ("DE", "Deutschland")
-    if raw.lower() == "polen":
-        return ("PL", "Polen")
-
-    return ("", raw)
-
-
-def ensure_cols(df: pd.DataFrame, required: list[str], df_name: str):
-    missing = [c for c in required if c not in df.columns]
-    if missing:
-        raise KeyError(f"{df_name} 表缺列: {missing}")
-
-
-def find_price_by_weight(df_rates: pd.DataFrame, weight: float):
+def pick_rate(rates_df: pd.DataFrame, weight: float):
     """
-    df_rates 必须有 w_from, w_to, price
-    匹配逻辑：w_from <= weight <= w_to（包含边界）
+    rates_df columns: w_from, w_to, price
+    Pick first row where w_from < weight <= w_to (or weight==0 => first bracket)
     """
-    ensure_cols(df_rates, ["w_from", "w_to", "price"], "rates")
+    if rates_df.empty:
+        return None
 
-    # 强制数值化
-    tmp = df_rates.copy()
-    tmp["w_from"] = pd.to_numeric(tmp["w_from"], errors="coerce")
-    tmp["w_to"] = pd.to_numeric(tmp["w_to"], errors="coerce")
-    tmp["price"] = pd.to_numeric(tmp["price"], errors="coerce")
-    tmp = tmp.dropna(subset=["w_from", "w_to", "price"])
+    w = float(weight)
 
-    if tmp.empty:
-        return None, None, None, 0.0, 0.0
+    # tolerate 0 weight => treat as smallest bracket
+    if w <= 0:
+        row = rates_df.sort_values(["w_to"]).iloc[0]
+        return row
 
-    w_min = float(tmp["w_from"].min())
-    w_max = float(tmp["w_to"].max())
+    df = rates_df.copy()
+    df["w_from"] = df["w_from"].astype(float)
+    df["w_to"] = df["w_to"].astype(float)
 
-    row = tmp[(tmp["w_from"] <= weight) & (weight <= tmp["w_to"])].sort_values(["w_from", "w_to"]).head(1)
-    if row.empty:
-        return None, None, None, w_min, w_max
+    hit = df[(df["w_from"] < w) & (w <= df["w_to"])].sort_values(["w_to"])
+    if not hit.empty:
+        return hit.iloc[0]
 
-    r = row.iloc[0]
-    return float(r["price"]), float(r["w_from"]), float(r["w_to"]), w_min, w_max
+    # If not found, maybe user weight exceeds max
+    max_to = float(df["w_to"].max())
+    return {"_exceed": True, "max_to": max_to}
 
+# ----------------------------
+# Load data
+# ----------------------------
+@st.cache_data
+def load_all_data():
+    dhl_de_plz2_zone = load_csv("dhl_de_plz2_zone.csv")           # plz2, zone
+    dhl_de_rates = load_csv("dhl_de_rates.csv")                   # zone, w_from, w_to, price
+    dhl_eu_zone_map = load_csv("dhl_eu_zone_map.csv")             # country_code, plz, zone
+    dhl_eu_rates_long = load_csv("dhl_eu_rates_long.csv")         # country_code, zone, w_from, w_to, price
 
-# =========================
-# 载入数据
-# =========================
-(
-    params,
-    dhl_de_plz2_zone,
-    dhl_de_rates,
-    dhl_eu_zone_map,
-    dhl_eu_rates_long,
-    raben_zone_map,
-    raben_rates_long,
-) = load_all_data()
+    raben_zone_map = None
+    raben_rates_long = None
+    if (DATA_DIR / "raben_zone_map.csv").exists():
+        raben_zone_map = load_csv("raben_zone_map.csv")           # scope,country,plz,zone
+    if (DATA_DIR / "raben_rates_long.csv").exists():
+        raben_rates_long = load_csv("raben_rates_long.csv")       # scope,country,zone,w_from,w_to,price
 
+    return {
+        "dhl_de_plz2_zone": dhl_de_plz2_zone,
+        "dhl_de_rates": dhl_de_rates,
+        "dhl_eu_zone_map": dhl_eu_zone_map,
+        "dhl_eu_rates_long": dhl_eu_rates_long,
+        "raben_zone_map": raben_zone_map,
+        "raben_rates_long": raben_rates_long,
+    }
 
-# =========================
-# Sidebar 参数（管理员维护）
-# =========================
-st.sidebar.markdown("## ⚙️ 参数")
+data = load_all_data()
+params_default = load_params_default()
 
-def _param_number(key: str, default: float, step: float = 0.01):
-    v = params.get(key, default)
-    return st.sidebar.number_input(key, value=float(v), step=step, format="%.4f")
-
-dhl_fuel = _param_number("DHL Fuel %", 0.12, 0.01)
-dhl_security = _param_number("DHL Sicherheitszuschlag %", 0.00, 0.01)
-raben_daf = _param_number("Raben DAF %", 0.10, 0.01)
-raben_mob = _param_number("Raben Mobilitäts-Floater %", 0.029, 0.001)
-raben_adr_fee = _param_number("Raben ADR Fee €", 12.50, 0.5)
-raben_avis_fee = _param_number("Raben Avis Fee €", 12.00, 0.5)
-raben_ins_min = _param_number("Raben Insurance Min €", 5.95, 0.05)
-
-with st.sidebar.expander("🔍 数据状态（排错用）", expanded=False):
-    st.write("dhl_de_plz2_zone 行数:", len(dhl_de_plz2_zone))
-    st.write("dhl_de_rates 行数:", len(dhl_de_rates))
-    st.write("dhl_eu_zone_map 行数:", len(dhl_eu_zone_map))
-    st.write("dhl_eu_rates_long 行数:", len(dhl_eu_rates_long))
-    st.write("raben_zone_map 行数:", len(raben_zone_map))
-    st.write("raben_rates_long 行数:", len(raben_rates_long))
-    st.caption("如果行数很少/为0，说明CSV没提交成功或路径不对。")
-
-
-# =========================
-# 主界面
-# =========================
+# ----------------------------
+# UI
+# ----------------------------
+st.set_page_config(page_title="Aifuge 双承运商报价系统（生产版）", layout="wide")
 st.title("🚚 Aifuge 双承运商报价系统（生产版）")
-st.markdown("### 📦 输入")
 
-c1, c2, c3 = st.columns([2.2, 2.0, 2.0], vertical_alignment="bottom")
+# Sidebar params
+st.sidebar.header("⚙️ 参数")
+dhl_fuel = st.sidebar.number_input(
+    "DHL Fuel %", min_value=0.0, max_value=1.0,
+    value=float(params_default.get("dhl_fuel", 0.12)),
+    step=0.01, format="%.2f",
+)
+dhl_security = st.sidebar.number_input(
+    "DHL Sicherheitszuschlag %", min_value=0.0, max_value=1.0,
+    value=float(params_default.get("dhl_security", 0.00)),
+    step=0.01, format="%.2f",
+)
 
-with c1:
+raben_daf = st.sidebar.number_input(
+    "Raben DAF %", min_value=0.0, max_value=1.0,
+    value=float(params_default.get("raben_daf", 0.10)),
+    step=0.01, format="%.2f",
+)
+
+# Inputs
+st.subheader("📦 输入")
+col1, col2, col3 = st.columns([2, 2, 2])
+
+with col1:
     scope = st.selectbox("Scope", ["DE", "EU"], index=0)
-with c2:
-    weight = st.number_input("Actual Weight (kg)", min_value=0.01, value=200.0, step=10.0, format="%.2f")
-with c3:
-    plz2 = st.text_input("Destination PLZ (前2位)", value="38")
+    dest_country_raw = st.text_input("Destination Country（可输入：Polen/PL/波兰 等）", value="Deutschland")
+with col2:
+    weight = st.number_input("Actual Weight (kg)", min_value=0.0, value=200.0, step=10.0, format="%.2f")
+with col3:
+    dest_plz2_raw = st.text_input("Destination PLZ (前2位)", value="38")
 
-dest_country_raw = st.text_input("Destination Country（可输入：Polen/PL/波兰等）", value="Deutschland")
+dest_plz2 = norm_plz2(dest_plz2_raw)
+dest_cc = norm_country_code(dest_country_raw)
 
-adr = st.checkbox("ADR（危险品）", value=False)
-avis = st.checkbox("Avis 预约/派送", value=False)
-insurance_value = st.number_input("Insurance Value €（可选）", min_value=0.0, value=0.0, step=100.0, format="%.2f")
+btn = st.button("💰 计算报价")
 
-btn = st.button("💰 计算报价", type="primary")
+# ----------------------------
+# Calculation
+# ----------------------------
+st.divider()
+st.subheader("📊 结果（Netto）")
 
+res_col1, res_col2 = st.columns(2)
 
-# =========================
-# 计算逻辑
-# =========================
-def calc_dhl(scope: str, country_code: str, plz2: str, weight: float):
-    """
-    DHL:
-    - scope=DE: plz2->zone via dhl_de_plz2_zone, rates via dhl_de_rates
-    - scope=EU: (country_code,plz2)->zone via dhl_eu_zone_map, rates via dhl_eu_rates_long
-    """
-    plz2n = normalize_plz2(plz2)
-    if not plz2n:
-        return None, "DHL：PLZ 前2位无法识别（请输入例如 38 或 38110）"
-
-    if scope == "DE":
-        if dhl_de_plz2_zone.empty or dhl_de_rates.empty:
-            return None, "DHL：缺少 DE 数据文件（dhl_de_plz2_zone.csv / dhl_de_rates.csv）"
-
-        ensure_cols(dhl_de_plz2_zone, ["plz2", "zone"], "dhl_de_plz2_zone")
-        ensure_cols(dhl_de_rates, ["zone", "w_from", "w_to", "price"], "dhl_de_rates")
-
-        zrow = dhl_de_plz2_zone[dhl_de_plz2_zone["plz2"].astype(str) == str(plz2n)]
-        if zrow.empty:
-            return None, f"DHL：找不到 DE 的 PLZ2={plz2n} 对应 zone（检查 dhl_de_plz2_zone.csv）"
-        zone = int(zrow.iloc[0]["zone"])
-
-        rates = dhl_de_rates[dhl_de_rates["zone"].astype(int) == zone]
-        base, w_from, w_to, w_min, w_max = find_price_by_weight(rates, weight)
-        if base is None:
-            return None, f"DHL：无法匹配重量段（你当前CSV最大到 {w_max:.0f}kg）。需要把 DHL DE rates 补到更大重量段。"
-
-        fuel_amt = base * float(dhl_fuel)
-        sec_amt = base * float(dhl_security)
-        total = base + fuel_amt + sec_amt
-
-        return {
-            "zone": zone,
-            "base": base,
-            "fuel_amt": fuel_amt,
-            "sec_amt": sec_amt,
-            "total": total,
-            "bracket": (w_from, w_to),
-            "plz2": plz2n,
-        }, None
-
-    # EU
-    if not country_code:
-        return None, "DHL：EU 模式下需要可识别的国家（例如 Polen/PL/Poland）"
-
-    if dhl_eu_zone_map.empty or dhl_eu_rates_long.empty:
-        return None, "DHL：缺少 EU 数据文件（dhl_eu_zone_map.csv / dhl_eu_rates_long.csv）"
-
-    ensure_cols(dhl_eu_zone_map, ["country_code", "plz2", "zone"], "dhl_eu_zone_map")
-    ensure_cols(dhl_eu_rates_long, ["country_code", "zone", "w_from", "w_to", "price"], "dhl_eu_rates_long")
-
-    zrow = dhl_eu_zone_map[
-        (dhl_eu_zone_map["country_code"].astype(str).str.upper() == country_code.upper())
-        & (dhl_eu_zone_map["plz2"].astype(str) == str(plz2n))
-    ]
-    if zrow.empty:
-        return None, f"DHL：找不到 EU 的 {country_code}-{plz2n} 对应 zone（检查 dhl_eu_zone_map.csv）"
-    zone = int(zrow.iloc[0]["zone"])
-
-    rates = dhl_eu_rates_long[
-        (dhl_eu_rates_long["country_code"].astype(str).str.upper() == country_code.upper())
-        & (dhl_eu_rates_long["zone"].astype(int) == zone)
-    ]
-    base, w_from, w_to, w_min, w_max = find_price_by_weight(rates, weight)
-    if base is None:
-        return None, f"DHL：无法匹配 EU 重量段（你当前CSV最大到 {w_max:.0f}kg）。需要把 dhl_eu_rates_long.csv 补到更大重量段。"
-
-    fuel_amt = base * float(dhl_fuel)
-    sec_amt = base * float(dhl_security)
-    total = base + fuel_amt + sec_amt
-
-    return {
-        "zone": zone,
-        "base": base,
-        "fuel_amt": fuel_amt,
-        "sec_amt": sec_amt,
-        "total": total,
-        "bracket": (w_from, w_to),
-        "plz2": plz2n,
-        "country_code": country_code.upper(),
-    }, None
-
-
-def calc_raben(scope: str, raben_country: str, plz2: str, weight: float, adr: bool, avis: bool, insurance_value: float):
-    """
-    Raben:
-    - zone map: raben_zone_map(scope,country,plz2,zone)
-    - rates: raben_rates_long(scope,country,zone,w_from,w_to,price)
-    """
-    plz2n = normalize_plz2(plz2)
-    if not plz2n:
-        return None, "Raben：PLZ 前2位无法识别（请输入例如 44 或 4490）"
-
-    if raben_zone_map.empty or raben_rates_long.empty:
-        return None, "Raben：缺少数据文件（raben_zone_map.csv / raben_rates_long.csv）"
-
-    ensure_cols(raben_zone_map, ["scope", "country", "plz2", "zone"], "raben_zone_map")
-    ensure_cols(raben_rates_long, ["scope", "country", "zone", "w_from", "w_to", "price"], "raben_rates_long")
-
-    zrow = raben_zone_map[
-        (raben_zone_map["scope"].astype(str).str.upper() == scope.upper())
-        & (raben_zone_map["country"].astype(str).str.lower() == str(raben_country).lower())
-        & (raben_zone_map["plz2"].astype(str) == str(plz2n))
-    ]
-    if zrow.empty:
-        return None, f"Raben：找不到 {scope}-{raben_country}-{plz2n} zone（检查 raben_zone_map.csv）"
-    zone = int(zrow.iloc[0]["zone"])
-
-    rates = raben_rates_long[
-        (raben_rates_long["scope"].astype(str).str.upper() == scope.upper())
-        & (raben_rates_long["country"].astype(str).str.lower() == str(raben_country).lower())
-        & (raben_rates_long["zone"].astype(int) == zone)
-    ]
-    base, w_from, w_to, w_min, w_max = find_price_by_weight(rates, weight)
-    if base is None:
-        return None, f"Raben：无法匹配重量段（你当前CSV最大到 {w_max:.0f}kg）。需要把 raben_rates_long.csv 补到更大重量段。"
-
-    # DAF + Mobilitäts-Floater（你侧边栏写的是 DAF%，我这里按“DAF% + Mobilitäts%”都叠加在 base 上）
-    daf_amt = base * float(raben_daf)
-    mob_amt = base * float(raben_mob)
-
-    adr_amt = float(raben_adr_fee) if adr else 0.0
-    avis_amt = float(raben_avis_fee) if avis else 0.0
-
-    # 保险：示例逻辑：如果填写了保险价值，则至少收 min
-    ins_amt = 0.0
-    if insurance_value and insurance_value > 0:
-        ins_amt = float(raben_ins_min)
-
-    total = base + daf_amt + mob_amt + adr_amt + avis_amt + ins_amt
-
-    return {
-        "zone": zone,
-        "base": base,
-        "daf_amt": daf_amt,
-        "mob_amt": mob_amt,
-        "adr_amt": adr_amt,
-        "avis_amt": avis_amt,
-        "ins_amt": ins_amt,
-        "total": total,
-        "bracket": (w_from, w_to),
-        "plz2": plz2n,
-        "country": raben_country,
-        "scope": scope,
-    }, None
-
-
-# =========================
-# 输出
-# =========================
 if btn:
-    country_code, raben_country = normalize_country_input(dest_country_raw)
-    plz2n = normalize_plz2(plz2)
+    # --- DHL ---
+    try:
+        if scope == "DE":
+            # map zone by plz2
+            zmap = data["dhl_de_plz2_zone"].copy()
+            zmap["plz2"] = zmap["plz2"].astype(str).str.zfill(2)
 
-    st.markdown("---")
-    st.markdown("## 📊 结果（Netto）")
-
-    left, right = st.columns(2)
-
-    # DHL
-    with left:
-        st.subheader("DHL Freight")
-        try:
-            dhl_res, dhl_err = calc_dhl(scope, country_code, plz2n, float(weight))
-            if dhl_err:
-                st.error(dhl_err)
+            hit = zmap[zmap["plz2"] == dest_plz2]
+            if hit.empty:
+                dhl_msg = f"DHL：无法匹配 DE PLZ2={dest_plz2}（检查 dhl_de_plz2_zone.csv）"
             else:
-                w_from, w_to = dhl_res["bracket"]
-                st.success(
-                    f"Zone {dhl_res['zone']} | "
-                    f"Weight {weight:.0f}kg in [{w_from:.0f}-{w_to:.0f}] | "
-                    f"Base €{dhl_res['base']:.2f} | "
-                    f"Fuel {float(dhl_fuel)*100:.2f}% (€{dhl_res['fuel_amt']:.2f}) | "
-                    f"Security {float(dhl_security)*100:.2f}% (€{dhl_res['sec_amt']:.2f}) | "
-                    f"Total €{dhl_res['total']:.2f}"
-                )
-        except KeyError as e:
-            st.error(f"DHL 系统错误：{e}")
-        except Exception as e:
-            st.error(f"DHL 系统错误：{e}")
+                zone = int(hit.iloc[0]["zone"])
+                rates = data["dhl_de_rates"]
+                rates_zone = rates[rates["zone"] == zone]
+                picked = pick_rate(rates_zone, weight)
 
-    # Raben
-    with right:
-        st.subheader("Raben")
-        try:
-            raben_res, raben_err = calc_raben(scope, raben_country, plz2n, float(weight), adr, avis, float(insurance_value))
-            if raben_err:
-                st.error(raben_err)
+                if isinstance(picked, dict) and picked.get("_exceed"):
+                    dhl_msg = f"DHL：重量 {weight:.2f}kg 超出 DE 价目最大 {picked['max_to']:.0f}kg（需要补全表或走特殊报价）"
+                else:
+                    base = float(picked["price"])
+                    fuel_fee = base * float(dhl_fuel)
+                    sec_fee = base * float(dhl_security)
+                    total = base + fuel_fee + sec_fee
+
+                    dhl_msg = f"Zone {zone} | Base €{base:.2f} | Fuel {dhl_fuel*100:.2f}% | Security {dhl_security*100:.2f}% | Total €{total:.2f}"
+
+        else:
+            # EU export: need country_code + plz2
+            if not dest_cc:
+                dhl_msg = f"DHL：EU 需要国家代码（例如 PL / BG / LV）。你输入的是：{dest_country_raw}"
             else:
-                w_from, w_to = raben_res["bracket"]
-                st.success(
-                    f"{raben_res['country']} Zone {raben_res['zone']} | "
-                    f"Weight {weight:.0f}kg in [{w_from:.0f}-{w_to:.0f}] | "
-                    f"Base €{raben_res['base']:.2f} | "
-                    f"DAF {float(raben_daf)*100:.2f}% (€{raben_res['daf_amt']:.2f}) | "
-                    f"Mob {float(raben_mob)*100:.2f}% (€{raben_res['mob_amt']:.2f}) | "
-                    f"ADR €{raben_res['adr_amt']:.2f} | Avis €{raben_res['avis_amt']:.2f} | Ins €{raben_res['ins_amt']:.2f} | "
-                    f"Total €{raben_res['total']:.2f}"
-                )
-        except KeyError as e:
-            st.error(f"Raben 系统错误：{e}")
-        except Exception as e:
-            st.error(f"Raben 系统错误：{e}")
+                zmap = data["dhl_eu_zone_map"].copy()
+                zmap["country_code"] = zmap["country_code"].astype(str).str.upper()
+                zmap["plz"] = zmap["plz"].astype(str).str.zfill(2)
 
-    st.caption(
-        "提示：如果你输入 2000kg/5000kg 仍然提示“无法匹配重量段”，那不是程序问题，而是你的 CSV 还没补全到对应重量范围。"
-    )
+                hit = zmap[(zmap["country_code"] == dest_cc) & (zmap["plz"] == dest_plz2)]
+                if hit.empty:
+                    dhl_msg = f"DHL：无法匹配 EU {dest_cc}-{dest_plz2}（检查 dhl_eu_zone_map.csv）"
+                else:
+                    zone = int(hit.iloc[0]["zone"])
+                    rates = data["dhl_eu_rates_long"].copy()
+                    rates["country_code"] = rates["country_code"].astype(str).str.upper()
+                    rates_zone = rates[(rates["country_code"] == dest_cc) & (rates["zone"] == zone)]
+                    picked = pick_rate(rates_zone, weight)
+
+                    if isinstance(picked, dict) and picked.get("_exceed"):
+                        dhl_msg = f"DHL：重量 {weight:.2f}kg 超出 EU 价目最大 {picked['max_to']:.0f}kg（DHL Export 表通常到 2500kg）"
+                    else:
+                        base = float(picked["price"])
+                        fuel_fee = base * float(dhl_fuel)
+                        sec_fee = base * float(dhl_security)
+                        total = base + fuel_fee + sec_fee
+                        dhl_msg = f"{dest_cc}-{dest_plz2} Zone {zone} | Base €{base:.2f} | Fuel {dhl_fuel*100:.2f}% | Security {dhl_security*100:.2f}% | Total €{total:.2f}"
+
+    except Exception as e:
+        dhl_msg = f"DHL 系统错误：{e}"
+
+    # --- Raben ---
+    try:
+        rz = data["raben_zone_map"]
+        rr = data["raben_rates_long"]
+        if rz is None or rr is None:
+            raben_msg = "Raben：未检测到 raben_zone_map.csv / raben_rates_long.csv"
+        else:
+            # Raben uses (scope,country,plz,zone)
+            rz2 = rz.copy()
+            rz2["plz"] = rz2["plz"].astype(str).str.zfill(2)
+            rz2["scope"] = rz2["scope"].astype(str).str.upper()
+
+            # country is free text in your file (e.g. Polen, Deutschland...)
+            # we keep user's raw input to match; you can standardize later
+            hit = rz2[(rz2["scope"] == scope) & (rz2["country"] == dest_country_raw) & (rz2["plz"] == dest_plz2)]
+            if hit.empty:
+                raben_msg = f"Raben：无法匹配 {scope} {dest_country_raw}-{dest_plz2}（检查 raben_zone_map.csv）"
+            else:
+                zone = int(hit.iloc[0]["zone"])
+                rr2 = rr.copy()
+                rr2["scope"] = rr2["scope"].astype(str).str.upper()
+                rates_zone = rr2[(rr2["scope"] == scope) & (rr2["country"] == dest_country_raw) & (rr2["zone"] == zone)]
+                picked = pick_rate(rates_zone, weight)
+
+                if isinstance(picked, dict) and picked.get("_exceed"):
+                    raben_msg = f"Raben：重量 {weight:.2f}kg 超出价目最大 {picked['max_to']:.0f}kg（需要补全到 5000kg）"
+                else:
+                    base = float(picked["price"])
+                    daf_fee = base * float(raben_daf)
+                    total = base + daf_fee
+                    raben_msg = f"{dest_country_raw} Zone {zone} | Base €{base:.2f} | DAF {raben_daf*100:.2f}% | Total €{total:.2f}"
+
+    except Exception as e:
+        raben_msg = f"Raben 系统错误：{e}"
+
+    with res_col1:
+        st.markdown("### DHL Freight")
+        if "错误" in dhl_msg or "无法匹配" in dhl_msg or "超出" in dhl_msg:
+            st.error(dhl_msg)
+        else:
+            st.success(dhl_msg)
+
+    with res_col2:
+        st.markdown("### Raben")
+        if "错误" in raben_msg or "无法匹配" in raben_msg or "超出" in raben_msg or "未检测到" in raben_msg:
+            st.error(raben_msg)
+        else:
+            st.success(raben_msg)
