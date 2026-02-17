@@ -229,7 +229,7 @@ def calc_raben(scope: str, dest_country_raw: str, plz2: int, weight: float) -> t
         must_have_cols(df_zone, ["scope", "country", "plz2", "zone"], "raben_zone_map.csv")
         df_zone["scope"] = df_zone["scope"].astype(str).str.upper().str.strip()
         df_zone["country"] = df_zone["country"].astype(str).str.strip()
-        df_zone["plz2"] = pd.to_numeric(df_zone["plz"], errors="coerce").astype("Int64")
+        df_zone["plz2"] = pd.to_numeric(df_zone["plz2"], errors="coerce").astype("Int64")
 
         zrow = df_zone[(df_zone["scope"] == scope) & (df_zone["country"] == raben_country) & (df_zone["plz2"] == plz2)]
         if zrow.empty:
