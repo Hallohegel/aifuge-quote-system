@@ -1,0 +1,10 @@
+{
+  "dhl_fuel_pct": 0.12,
+  "dhl_security_pct": 0.00,
+  "raben_daf_pct": 0.10,
+  "raben_mobility_pct": 0.029,
+  "raben_adr_fee": 12.50,
+  "raben_avis_fee": 12.00,
+  "raben_ins_min": 5.95,
+  "raben_diesel_cent": 130.00
+}
