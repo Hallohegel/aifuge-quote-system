@@ -1,1563 +1,1563 @@
-scope,country,plz2,zone
-DE	Deutschland	01	6
-DE	Deutschland	02	7
-DE	Deutschland	03	6
-DE	Deutschland	04	5
-DE	Deutschland	06	4
-DE	Deutschland	07	6
-DE	Deutschland	08	6
-DE	Deutschland	09	6
-DE	Deutschland	10	5
-DE	Deutschland	12	5
-DE	Deutschland	13	5
-DE	Deutschland	14	5
-DE	Deutschland	15	6
-DE	Deutschland	16	6
-DE	Deutschland	17	7
-DE	Deutschland	18	6
-DE	Deutschland	19	5
-DE	Deutschland	20	3
-DE	Deutschland	21	3
-DE	Deutschland	22	3
-DE	Deutschland	23	4
-DE	Deutschland	24	5
-DE	Deutschland	25	5
-DE	Deutschland	26	4
-DE	Deutschland	27	3
-DE	Deutschland	28	3
-DE	Deutschland	29	2
-DE	Deutschland	30	1
-DE	Deutschland	31	1
-DE	Deutschland	32	2
-DE	Deutschland	33	3
-DE	Deutschland	34	3
-DE	Deutschland	35	5
-DE	Deutschland	36	4
-DE	Deutschland	37	2
-DE	Deutschland	38	2
-DE	Deutschland	39	3
-DE	Deutschland	40	5
-DE	Deutschland	41	6
-DE	Deutschland	42	5
-DE	Deutschland	44	4
-DE	Deutschland	45	5
-DE	Deutschland	46	5
-DE	Deutschland	47	6
-DE	Deutschland	48	4
-DE	Deutschland	49	4
-DE	Deutschland	50	6
-DE	Deutschland	51	6
-DE	Deutschland	52	6
-DE	Deutschland	53	6
-DE	Deutschland	54	8
-DE	Deutschland	55	7
-DE	Deutschland	56	6
-DE	Deutschland	57	6
-DE	Deutschland	58	5
-DE	Deutschland	59	4
-DE	Deutschland	60	6
-DE	Deutschland	61	6
-DE	Deutschland	63	6
-DE	Deutschland	64	6
-DE	Deutschland	65	6
-DE	Deutschland	66	8
-DE	Deutschland	67	7
-DE	Deutschland	68	7
-DE	Deutschland	69	7
-DE	Deutschland	70	8
-DE	Deutschland	71	8
-DE	Deutschland	72	9
-DE	Deutschland	73	8
-DE	Deutschland	74	7
-DE	Deutschland	75	8
-DE	Deutschland	76	8
-DE	Deutschland	77	9
-DE	Deutschland	78	10
-DE	Deutschland	79	10
-DE	Deutschland	80	10
-DE	Deutschland	81	10
-DE	Deutschland	84	10
-DE	Deutschland	85	9
-DE	Deutschland	86	9
-DE	Deutschland	87	10
-DE	Deutschland	88	10
-DE	Deutschland	89	8
-DE	Deutschland	90	7
-DE	Deutschland	91	7
-DE	Deutschland	92	8
-DE	Deutschland	93	9
-DE	Deutschland	94	10
-DE	Deutschland	95	7
-DE	Deutschland	96	6
-DE	Deutschland	97	6
-DE	Deutschland	98	5
-DE	Deutschland	99	4
-EU	Belgien	00	10
-EU	Belgien	20	1
-EU	Belgien	21	1
-EU	Belgien	22	1
-EU	Belgien	23	1
-EU	Belgien	24	1
-EU	Belgien	25	1
-EU	Belgien	26	1
-EU	Belgien	27	1
-EU	Belgien	28	1
-EU	Belgien	29	1
-EU	Belgien	30	1
-EU	Belgien	31	1
-EU	Belgien	32	1
-EU	Belgien	33	1
-EU	Belgien	34	1
-EU	Belgien	35	1
-EU	Belgien	36	1
-EU	Belgien	37	1
-EU	Belgien	38	1
-EU	Belgien	39	1
-EU	Belgien	40	1
-EU	Belgien	41	1
-EU	Belgien	42	1
-EU	Belgien	44	1
-EU	Belgien	45	1
-EU	Belgien	46	1
-EU	Belgien	47	1
-EU	Belgien	48	1
-EU	Belgien	49	1
-EU	Belgien	50	2
-EU	Belgien	51	2
-EU	Belgien	52	2
-EU	Belgien	53	2
-EU	Belgien	55	2
-EU	Belgien	56	2
-EU	Belgien	60	2
-EU	Belgien	61	2
-EU	Belgien	63	2
-EU	Belgien	64	2
-EU	Belgien	66	2
-EU	Belgien	67	2
-EU	Belgien	70	2
-EU	Belgien	71	2
-EU	Belgien	73	2
-EU	Belgien	75	2
-EU	Belgien	76	2
-EU	Belgien	77	2
-EU	Belgien	78	2
-EU	Belgien	80	2
-EU	Belgien	83	2
-EU	Belgien	85	2
-EU	Belgien	86	2
-EU	Belgien	87	2
-EU	Belgien	88	2
-EU	Belgien	89	2
-EU	Belgien	90	1
-EU	Belgien	92	1
-EU	Belgien	93	1
-EU	Belgien	94	1
-EU	Belgien	95	1
-EU	Belgien	96	1
-EU	Belgien	97	1
-EU	Belgien	98	1
-EU	Belgien	99	1
-EU	Bulgarien	00	10
-EU	Bulgarien	20	1
-EU	Bulgarien	21	1
-EU	Bulgarien	22	1
-EU	Bulgarien	23	1
-EU	Bulgarien	24	1
-EU	Bulgarien	25	1
-EU	Bulgarien	26	1
-EU	Bulgarien	27	2
-EU	Bulgarien	28	2
-EU	Bulgarien	29	2
-EU	Bulgarien	30	2
-EU	Bulgarien	31	1
-EU	Bulgarien	32	2
-EU	Bulgarien	33	2
-EU	Bulgarien	34	2
-EU	Bulgarien	35	1
-EU	Bulgarien	36	2
-EU	Bulgarien	37	2
-EU	Bulgarien	38	2
-EU	Bulgarien	39	2
-EU	Bulgarien	40	2
-EU	Bulgarien	41	3
-EU	Bulgarien	42	3
-EU	Bulgarien	44	1
-EU	Bulgarien	45	4
-EU	Bulgarien	46	4
-EU	Bulgarien	47	4
-EU	Bulgarien	48	4
-EU	Bulgarien	49	4
-EU	Bulgarien	50	4
-EU	Bulgarien	51	4
-EU	Bulgarien	52	4
-EU	Bulgarien	53	4
-EU	Bulgarien	54	4
-EU	Bulgarien	55	4
-EU	Bulgarien	56	4
-EU	Bulgarien	57	4
-EU	Bulgarien	58	4
-EU	Bulgarien	59	4
-EU	Bulgarien	60	2
-EU	Bulgarien	61	2
-EU	Bulgarien	63	3
-EU	Bulgarien	64	3
-EU	Bulgarien	65	3
-EU	Bulgarien	66	3
-EU	Bulgarien	67	3
-EU	Bulgarien	68	4
-EU	Bulgarien	69	4
-EU	Bulgarien	70	3
-EU	Bulgarien	71	3
-EU	Bulgarien	72	3
-EU	Bulgarien	73	3
-EU	Bulgarien	74	4
-EU	Bulgarien	75	4
-EU	Bulgarien	76	4
-EU	Bulgarien	77	4
-EU	Bulgarien	78	4
-EU	Bulgarien	79	4
-EU	Bulgarien	80	4
-EU	Bulgarien	81	4
-EU	Bulgarien	82	4
-EU	Bulgarien	83	4
-EU	Bulgarien	84	4
-EU	Bulgarien	85	4
-EU	Bulgarien	86	3
-EU	Bulgarien	87	3
-EU	Bulgarien	88	3
-EU	Bulgarien	89	3
-EU	Bulgarien	90	4
-EU	Bulgarien	91	4
-EU	Bulgarien	92	4
-EU	Bulgarien	93	4
-EU	Bulgarien	94	4
-EU	Bulgarien	95	4
-EU	Bulgarien	96	4
-EU	Bulgarien	97	4
-EU	Bulgarien	98	2
-EU	Bulgarien	99	2
-EU	DÃ¤nemark	09	4
-EU	DÃ¤nemark	10	4
-EU	DÃ¤nemark	11	4
-EU	DÃ¤nemark	12	4
-EU	DÃ¤nemark	13	4
-EU	DÃ¤nemark	14	4
-EU	DÃ¤nemark	15	4
-EU	DÃ¤nemark	16	4
-EU	DÃ¤nemark	17	4
-EU	DÃ¤nemark	18	4
-EU	DÃ¤nemark	19	4
-EU	DÃ¤nemark	20	4
-EU	DÃ¤nemark	21	4
-EU	DÃ¤nemark	22	4
-EU	DÃ¤nemark	23	4
-EU	DÃ¤nemark	24	4
-EU	DÃ¤nemark	25	4
-EU	DÃ¤nemark	26	3
-EU	DÃ¤nemark	27	3
-EU	DÃ¤nemark	28	3
-EU	DÃ¤nemark	29	3
-EU	DÃ¤nemark	30	4
-EU	DÃ¤nemark	31	4
-EU	DÃ¤nemark	32	4
-EU	DÃ¤nemark	33	4
-EU	DÃ¤nemark	34	4
-EU	DÃ¤nemark	35	4
-EU	DÃ¤nemark	36	4
-EU	DÃ¤nemark	37	5
-EU	DÃ¤nemark	40	4
-EU	DÃ¤nemark	41	4
-EU	DÃ¤nemark	42	4
-EU	DÃ¤nemark	43	4
-EU	DÃ¤nemark	44	4
-EU	DÃ¤nemark	45	4
-EU	DÃ¤nemark	46	4
-EU	DÃ¤nemark	47	4
-EU	DÃ¤nemark	48	4
-EU	DÃ¤nemark	49	4
-EU	DÃ¤nemark	50	1
-EU	DÃ¤nemark	51	1
-EU	DÃ¤nemark	52	1
-EU	DÃ¤nemark	53	1
-EU	DÃ¤nemark	54	1
-EU	DÃ¤nemark	55	1
-EU	DÃ¤nemark	56	1
-EU	DÃ¤nemark	57	1
-EU	DÃ¤nemark	58	1
-EU	DÃ¤nemark	59	2
-EU	DÃ¤nemark	60	1
-EU	DÃ¤nemark	61	1
-EU	DÃ¤nemark	62	1
-EU	DÃ¤nemark	63	1
-EU	DÃ¤nemark	64	1
-EU	DÃ¤nemark	65	1
-EU	DÃ¤nemark	66	1
-EU	DÃ¤nemark	67	1
-EU	DÃ¤nemark	68	1
-EU	DÃ¤nemark	69	1
-EU	DÃ¤nemark	70	1
-EU	DÃ¤nemark	71	1
-EU	DÃ¤nemark	72	1
-EU	DÃ¤nemark	73	1
-EU	DÃ¤nemark	74	1
-EU	DÃ¤nemark	75	2
-EU	DÃ¤nemark	76	2
-EU	DÃ¤nemark	77	2
-EU	DÃ¤nemark	78	2
-EU	DÃ¤nemark	79	2
-EU	DÃ¤nemark	80	1
-EU	DÃ¤nemark	81	1
-EU	DÃ¤nemark	82	1
-EU	DÃ¤nemark	83	1
-EU	DÃ¤nemark	84	2
-EU	DÃ¤nemark	85	2
-EU	DÃ¤nemark	86	1
-EU	DÃ¤nemark	87	1
-EU	DÃ¤nemark	88	2
-EU	DÃ¤nemark	89	2
-EU	DÃ¤nemark	90	2
-EU	DÃ¤nemark	91	2
-EU	DÃ¤nemark	92	2
-EU	DÃ¤nemark	93	2
-EU	DÃ¤nemark	94	2
-EU	DÃ¤nemark	95	2
-EU	DÃ¤nemark	96	2
-EU	DÃ¤nemark	97	2
-EU	DÃ¤nemark	98	2
-EU	DÃ¤nemark	99	2
-EU	Estland	00	10
-EU	Estland	20	4
-EU	Estland	21	4
-EU	Estland	29	4
-EU	Estland	30	3
-EU	Estland	31	3
-EU	Estland	40	3
-EU	Estland	41	3
-EU	Estland	42	4
-EU	Estland	44	2
-EU	Estland	45	2
-EU	Estland	46	2
-EU	Estland	47	8
-EU	Estland	49	3
-EU	Estland	50	1
-EU	Estland	51	1
-EU	Estland	60	2
-EU	Estland	61	2
-EU	Estland	67	3
-EU	Estland	68	3
-EU	Estland	69	3
-EU	Estland	70	3
-EU	Estland	71	2
-EU	Estland	72	2
-EU	Estland	73	2
-EU	Estland	74	2
-EU	Estland	75	2
-EU	Estland	76	2
-EU	Estland	78	2
-EU	Estland	79	2
-EU	Estland	80	2
-EU	Estland	85	2
-EU	Estland	86	3
-EU	Estland	88	4
-EU	Estland	90	2
-EU	Finnland	00	1
-EU	Finnland	01	1
-EU	Finnland	02	1
-EU	Finnland	03	2
-EU	Finnland	04	1
-EU	Finnland	05	2
-EU	Finnland	06	1
-EU	Finnland	07	2
-EU	Finnland	08	2
-EU	Finnland	09	3
-EU	Finnland	10	3
-EU	Finnland	11	1
-EU	Finnland	12	2
-EU	Finnland	13	1
-EU	Finnland	14	3
-EU	Finnland	15	1
-EU	Finnland	16	2
-EU	Finnland	17	3
-EU	Finnland	18	2
-EU	Finnland	19	4
-EU	Finnland	20	1
-EU	Finnland	21	2
-EU	Finnland	22	7
-EU	Finnland	23	2
-EU	Finnland	24	2
-EU	Finnland	25	2
-EU	Finnland	26	2
-EU	Finnland	27	3
-EU	Finnland	28	2
-EU	Finnland	29	2
-EU	Finnland	30	1
-EU	Finnland	31	2
-EU	Finnland	32	2
-EU	Finnland	33	2
-EU	Finnland	34	2
-EU	Finnland	35	3
-EU	Finnland	36	2
-EU	Finnland	37	2
-EU	Finnland	38	2
-EU	Finnland	39	2
-EU	Finnland	40	2
-EU	Finnland	41	2
-EU	Finnland	42	2
-EU	Finnland	43	4
-EU	Finnland	44	4
-EU	Finnland	45	1
-EU	Finnland	46	3
-EU	Finnland	47	2
-EU	Finnland	48	1
-EU	Finnland	49	3
-EU	Finnland	50	2
-EU	Finnland	51	2
-EU	Finnland	52	4
-EU	Finnland	53	2
-EU	Finnland	54	4
-EU	Finnland	55	2
-EU	Finnland	56	4
-EU	Finnland	57	2
-EU	Finnland	58	4
-EU	Finnland	59	5
-EU	Finnland	60	2
-EU	Finnland	61	3
-EU	Finnland	62	3
-EU	Finnland	63	3
-EU	Finnland	64	3
-EU	Finnland	65	2
-EU	Finnland	66	3
-EU	Finnland	67	2
-EU	Finnland	68	3
-EU	Finnland	69	5
-EU	Finnland	70	2
-EU	Finnland	71	3
-EU	Finnland	72	3
-EU	Finnland	73	4
-EU	Finnland	74	4
-EU	Finnland	75	5
-EU	Finnland	76	5
-EU	Finnland	77	4
-EU	Finnland	78	3
-EU	Finnland	79	4
-EU	Finnland	80	2
-EU	Finnland	81	4
-EU	Finnland	82	4
-EU	Finnland	83	4
-EU	Finnland	84	4
-EU	Finnland	85	5
-EU	Finnland	86	6
-EU	Finnland	87	3
-EU	Finnland	88	4
-EU	Finnland	89	6
-EU	Finnland	90	3
-EU	Finnland	91	5
-EU	Finnland	92	5
-EU	Finnland	93	6
-EU	Finnland	94	6
-EU	Finnland	95	7
-EU	Finnland	96	5
-EU	Finnland	97	8
-EU	Finnland	98	8
-EU	Finnland	99	8
-EU	Frankreich	01	2
-EU	Frankreich	02	1
-EU	Frankreich	03	2
-EU	Frankreich	04	9
-EU	Frankreich	05	10
-EU	Frankreich	06	6
-EU	Frankreich	07	3
-EU	Frankreich	08	2
-EU	Frankreich	09	8
-EU	Frankreich	10	4
-EU	Frankreich	11	9
-EU	Frankreich	12	8
-EU	Frankreich	13	5
-EU	Frankreich	14	3
-EU	Frankreich	15	9
-EU	Frankreich	16	9
-EU	Frankreich	17	10
-EU	Frankreich	18	4
-EU	Frankreich	19	10
-EU	Frankreich	20	10
-EU	Frankreich	21	2
-EU	Frankreich	22	8
-EU	Frankreich	23	8
-EU	Frankreich	24	8
-EU	Frankreich	25	5
-EU	Frankreich	26	2
-EU	Frankreich	27	4
-EU	Frankreich	28	2
-EU	Frankreich	29	9
-EU	Frankreich	30	5
-EU	Frankreich	31	7
-EU	Frankreich	32	8
-EU	Frankreich	33	6
-EU	Frankreich	34	2
-EU	Frankreich	35	6
-EU	Frankreich	36	5
-EU	Frankreich	37	3
-EU	Frankreich	38	3
-EU	Frankreich	39	3
-EU	Frankreich	40	9
-EU	Frankreich	41	5
-EU	Frankreich	42	2
-EU	Frankreich	43	2
-EU	Frankreich	44	8
-EU	Frankreich	45	7
-EU	Frankreich	46	8
-EU	Frankreich	47	9
-EU	Frankreich	48	5
-EU	Frankreich	49	5
-EU	Frankreich	50	3
-EU	Frankreich	51	2
-EU	Frankreich	52	2
-EU	Frankreich	53	8
-EU	Frankreich	54	6
-EU	Frankreich	55	5
-EU	Frankreich	56	8
-EU	Frankreich	57	7
-EU	Frankreich	58	7
-EU	Frankreich	59	1
-EU	Frankreich	60	1
-EU	Frankreich	61	5
-EU	Frankreich	62	1
-EU	Frankreich	63	2
-EU	Frankreich	64	10
-EU	Frankreich	65	9
-EU	Frankreich	66	3
-EU	Frankreich	67	1
-EU	Frankreich	68	1
-EU	Frankreich	69	1
-EU	Frankreich	70	2
-EU	Frankreich	71	2
-EU	Frankreich	72	5
-EU	Frankreich	73	2
-EU	Frankreich	74	7
-EU	Frankreich	75	1
-EU	Frankreich	76	4
-EU	Frankreich	77	2
-EU	Frankreich	78	5
-EU	Frankreich	79	7
-EU	Frankreich	80	2
-EU	Frankreich	81	8
-EU	Frankreich	82	7
-EU	Frankreich	83	5
-EU	Frankreich	84	3
-EU	Frankreich	85	5
-EU	Frankreich	86	5
-EU	Frankreich	87	5
-EU	Frankreich	88	3
-EU	Frankreich	89	5
-EU	Frankreich	90	3
-EU	Frankreich	91	5
-EU	Frankreich	92	1
-EU	Frankreich	93	1
-EU	Frankreich	94	1
-EU	Frankreich	95	1
-EU	Frankreich	98	6
-EU	Griechenland	00	10
-EU	Griechenland	20	3
-EU	Griechenland	21	3
-EU	Griechenland	22	3
-EU	Griechenland	23	6
-EU	Griechenland	24	6
-EU	Griechenland	25	3
-EU	Griechenland	26	6
-EU	Griechenland	27	6
-EU	Griechenland	28	6
-EU	Griechenland	29	6
-EU	Griechenland	30	6
-EU	Griechenland	31	3
-EU	Griechenland	32	3
-EU	Griechenland	33	3
-EU	Griechenland	34	3
-EU	Griechenland	35	6
-EU	Griechenland	36	6
-EU	Griechenland	37	5
-EU	Griechenland	38	3
-EU	Griechenland	40	2
-EU	Griechenland	41	5
-EU	Griechenland	42	3
-EU	Griechenland	44	2
-EU	Griechenland	45	5
-EU	Griechenland	46	3
-EU	Griechenland	47	3
-EU	Griechenland	48	5
-EU	Griechenland	49	3
-EU	Griechenland	50	3
-EU	Griechenland	60	2
-EU	Griechenland	61	2
-EU	Griechenland	63	3
-EU	Griechenland	64	3
-EU	Griechenland	65	5
-EU	Griechenland	66	3
-EU	Griechenland	67	5
-EU	Griechenland	68	5
-EU	Griechenland	69	6
-EU	Griechenland	70	6
-EU	Griechenland	71	6
-EU	Griechenland	72	6
-EU	Griechenland	73	6
-EU	Griechenland	74	6
-EU	Griechenland	80	6
-EU	Griechenland	81	6
-EU	Griechenland	82	6
-EU	Griechenland	83	6
-EU	Griechenland	84	6
-EU	Italien	00	10
-EU	Italien	01	10
-EU	Italien	02	10
-EU	Italien	03	9
-EU	Italien	04	9
-EU	Italien	06	10
-EU	Italien	07	10
-EU	Italien	08	10
-EU	Italien	09	7
-EU	Italien	10	3
-EU	Italien	12	5
-EU	Italien	13	4
-EU	Italien	14	6
-EU	Italien	15	4
-EU	Italien	16	2
-EU	Italien	17	4
-EU	Italien	18	7
-EU	Italien	19	5
-EU	Italien	20	1
-EU	Italien	21	2
-EU	Italien	22	3
-EU	Italien	23	4
-EU	Italien	24	3
-EU	Italien	25	2
-EU	Italien	26	5
-EU	Italien	27	3
-EU	Italien	28	4
-EU	Italien	30	5
-EU	Italien	31	5
-EU	Italien	32	5
-EU	Italien	33	6
-EU	Italien	34	6
-EU	Italien	35	2
-EU	Italien	36	2
-EU	Italien	37	1
-EU	Italien	38	4
-EU	Italien	39	3
-EU	Italien	40	2
-EU	Italien	41	2
-EU	Italien	42	4
-EU	Italien	44	2
-EU	Italien	45	3
-EU	Italien	46	2
-EU	Italien	47	5
-EU	Italien	48	3
-EU	Italien	50	2
-EU	Italien	51	3
-EU	Italien	52	5
-EU	Italien	53	5
-EU	Italien	54	6
-EU	Italien	55	5
-EU	Italien	56	4
-EU	Italien	57	6
-EU	Italien	60	5
-EU	Italien	61	7
-EU	Italien	63	2
-EU	Italien	64	3
-EU	Italien	65	4
-EU	Italien	66	6
-EU	Italien	67	6
-EU	Italien	70	3
-EU	Italien	71	8
-EU	Italien	72	7
-EU	Italien	73	8
-EU	Italien	74	6
-EU	Italien	75	7
-EU	Italien	76	7
-EU	Italien	80	5
-EU	Italien	81	6
-EU	Italien	82	6
-EU	Italien	83	6
-EU	Italien	84	7
-EU	Italien	85	8
-EU	Italien	86	7
-EU	Italien	87	10
-EU	Italien	88	10
-EU	Italien	90	5
-EU	Italien	91	9
-EU	Italien	92	8
-EU	Italien	93	8
-EU	Italien	94	8
-EU	Italien	95	9
-EU	Italien	96	9
-EU	Kroatien	10	1
-EU	Kroatien	20	5
-EU	Kroatien	21	4
-EU	Kroatien	22	4
-EU	Kroatien	23	4
-EU	Kroatien	31	3
-EU	Kroatien	32	3
-EU	Kroatien	33	3
-EU	Kroatien	34	3
-EU	Kroatien	35	3
-EU	Kroatien	40	2
-EU	Kroatien	42	2
-EU	Kroatien	43	2
-EU	Kroatien	44	2
-EU	Kroatien	47	2
-EU	Kroatien	48	2
-EU	Kroatien	49	2
-EU	Kroatien	51	3
-EU	Kroatien	52	4
-EU	Kroatien	53	3
-EU	Lettland	00	10
-EU	Lettland	20	1
-EU	Lettland	21	1
-EU	Lettland	30	2
-EU	Lettland	31	2
-EU	Lettland	39	2
-EU	Lettland	40	3
-EU	Lettland	41	3
-EU	Lettland	42	1
-EU	Lettland	44	3
-EU	Lettland	45	3
-EU	Lettland	46	3
-EU	Lettland	47	3
-EU	Lettland	48	2
-EU	Lettland	50	2
-EU	Lettland	51	2
-EU	Lettland	52	2
-EU	Lettland	53	3
-EU	Lettland	54	3
-EU	Lettland	57	3
-EU	Litauen	00	4
-EU	Litauen	01	1
-EU	Litauen	02	1
-EU	Litauen	03	1
-EU	Litauen	04	1
-EU	Litauen	06	1
-EU	Litauen	07	1
-EU	Litauen	08	1
-EU	Litauen	09	1
-EU	Litauen	10	1
-EU	Litauen	12	1
-EU	Litauen	13	1
-EU	Litauen	14	2
-EU	Litauen	15	2
-EU	Litauen	17	2
-EU	Litauen	18	2
-EU	Litauen	19	2
-EU	Litauen	20	2
-EU	Litauen	21	2
-EU	Litauen	26	2
-EU	Litauen	27	1
-EU	Litauen	28	2
-EU	Litauen	29	2
-EU	Litauen	30	3
-EU	Litauen	31	3
-EU	Litauen	35	2
-EU	Litauen	36	2
-EU	Litauen	37	2
-EU	Litauen	38	2
-EU	Litauen	39	2
-EU	Litauen	40	2
-EU	Litauen	41	3
-EU	Litauen	42	3
-EU	Litauen	44	1
-EU	Litauen	45	1
-EU	Litauen	46	1
-EU	Litauen	47	1
-EU	Litauen	48	1
-EU	Litauen	49	1
-EU	Litauen	50	1
-EU	Litauen	51	1
-EU	Litauen	52	1
-EU	Litauen	53	1
-EU	Litauen	54	1
-EU	Litauen	55	1
-EU	Litauen	56	1
-EU	Litauen	57	2
-EU	Litauen	58	2
-EU	Litauen	59	1
-EU	Litauen	60	3
-EU	Litauen	63	2
-EU	Litauen	64	2
-EU	Litauen	65	3
-EU	Litauen	66	3
-EU	Litauen	67	3
-EU	Litauen	68	2
-EU	Litauen	69	2
-EU	Litauen	70	2
-EU	Litauen	72	4
-EU	Litauen	73	4
-EU	Litauen	74	4
-EU	Litauen	75	4
-EU	Litauen	76	2
-EU	Litauen	77	2
-EU	Litauen	78	2
-EU	Litauen	79	2
-EU	Litauen	80	3
-EU	Litauen	81	3
-EU	Litauen	82	3
-EU	Litauen	83	3
-EU	Litauen	84	3
-EU	Litauen	85	3
-EU	Litauen	86	3
-EU	Litauen	87	3
-EU	Litauen	88	3
-EU	Litauen	89	3
-EU	Litauen	90	4
-EU	Litauen	91	2
-EU	Litauen	92	2
-EU	Litauen	93	4
-EU	Litauen	94	4
-EU	Litauen	95	4
-EU	Litauen	96	3
-EU	Litauen	97	3
-EU	Litauen	98	4
-EU	Litauen	99	4
-EU	Luxemburg	10	1
-EU	Luxemburg	11	1
-EU	Luxemburg	12	1
-EU	Luxemburg	13	1
-EU	Luxemburg	14	1
-EU	Luxemburg	15	1
-EU	Luxemburg	16	1
-EU	Luxemburg	17	1
-EU	Luxemburg	18	1
-EU	Luxemburg	19	1
-EU	Luxemburg	20	1
-EU	Luxemburg	21	1
-EU	Luxemburg	22	1
-EU	Luxemburg	23	1
-EU	Luxemburg	24	1
-EU	Luxemburg	25	1
-EU	Luxemburg	26	1
-EU	Luxemburg	27	1
-EU	Luxemburg	29	1
-EU	Luxemburg	32	1
-EU	Luxemburg	33	1
-EU	Luxemburg	34	1
-EU	Luxemburg	35	1
-EU	Luxemburg	36	1
-EU	Luxemburg	37	1
-EU	Luxemburg	38	1
-EU	Luxemburg	39	1
-EU	Luxemburg	40	1
-EU	Luxemburg	41	1
-EU	Luxemburg	42	1
-EU	Luxemburg	43	1
-EU	Luxemburg	44	1
-EU	Luxemburg	45	1
-EU	Luxemburg	46	1
-EU	Luxemburg	47	1
-EU	Luxemburg	48	1
-EU	Luxemburg	49	1
-EU	Luxemburg	52	1
-EU	Luxemburg	53	1
-EU	Luxemburg	54	1
-EU	Luxemburg	55	1
-EU	Luxemburg	56	1
-EU	Luxemburg	57	1
-EU	Luxemburg	58	1
-EU	Luxemburg	59	1
-EU	Luxemburg	61	1
-EU	Luxemburg	62	1
-EU	Luxemburg	63	1
-EU	Luxemburg	64	1
-EU	Luxemburg	65	1
-EU	Luxemburg	66	1
-EU	Luxemburg	67	1
-EU	Luxemburg	68	1
-EU	Luxemburg	69	1
-EU	Luxemburg	72	1
-EU	Luxemburg	73	1
-EU	Luxemburg	74	1
-EU	Luxemburg	75	1
-EU	Luxemburg	76	1
-EU	Luxemburg	77	2
-EU	Luxemburg	80	1
-EU	Luxemburg	81	1
-EU	Luxemburg	82	1
-EU	Luxemburg	83	1
-EU	Luxemburg	84	1
-EU	Luxemburg	85	2
-EU	Luxemburg	86	2
-EU	Luxemburg	87	2
-EU	Luxemburg	88	2
-EU	Luxemburg	90	2
-EU	Luxemburg	91	2
-EU	Luxemburg	92	2
-EU	Luxemburg	93	2
-EU	Luxemburg	94	2
-EU	Luxemburg	95	2
-EU	Luxemburg	96	2
-EU	Luxemburg	97	2
-EU	Luxemburg	98	2
-EU	Luxemburg	99	2
-EU	Niederlande	00	10
-EU	Niederlande	20	1
-EU	Niederlande	21	1
-EU	Niederlande	22	1
-EU	Niederlande	23	1
-EU	Niederlande	24	1
-EU	Niederlande	25	1
-EU	Niederlande	26	1
-EU	Niederlande	27	1
-EU	Niederlande	28	1
-EU	Niederlande	29	2
-EU	Niederlande	30	3
-EU	Niederlande	31	3
-EU	Niederlande	32	2
-EU	Niederlande	33	1
-EU	Niederlande	34	1
-EU	Niederlande	35	1
-EU	Niederlande	36	1
-EU	Niederlande	37	1
-EU	Niederlande	38	1
-EU	Niederlande	39	1
-EU	Niederlande	40	1
-EU	Niederlande	41	1
-EU	Niederlande	42	1
-EU	Niederlande	44	1
-EU	Niederlande	45	1
-EU	Niederlande	46	1
-EU	Niederlande	47	1
-EU	Niederlande	48	1
-EU	Niederlande	49	1
-EU	Niederlande	50	1
-EU	Niederlande	51	1
-EU	Niederlande	52	1
-EU	Niederlande	53	1
-EU	Niederlande	54	1
-EU	Niederlande	55	1
-EU	Niederlande	56	1
-EU	Niederlande	57	1
-EU	Niederlande	58	1
-EU	Niederlande	59	1
-EU	Niederlande	60	1
-EU	Niederlande	61	1
-EU	Niederlande	63	1
-EU	Niederlande	64	1
-EU	Niederlande	65	1
-EU	Niederlande	66	1
-EU	Niederlande	67	1
-EU	Niederlande	68	1
-EU	Niederlande	69	1
-EU	Niederlande	70	1
-EU	Niederlande	71	1
-EU	Niederlande	72	1
-EU	Niederlande	73	2
-EU	Niederlande	74	2
-EU	Niederlande	75	2
-EU	Niederlande	76	2
-EU	Niederlande	77	2
-EU	Niederlande	78	2
-EU	Niederlande	79	2
-EU	Niederlande	80	2
-EU	Niederlande	81	2
-EU	Niederlande	82	2
-EU	Niederlande	83	2
-EU	Niederlande	84	2
-EU	Niederlande	85	2
-EU	Niederlande	86	2
-EU	Niederlande	87	2
-EU	Niederlande	88	2
-EU	Niederlande	89	2
-EU	Niederlande	90	2
-EU	Niederlande	91	2
-EU	Niederlande	92	2
-EU	Niederlande	93	2
-EU	Niederlande	94	2
-EU	Niederlande	95	2
-EU	Niederlande	96	2
-EU	Niederlande	97	2
-EU	Niederlande	98	2
-EU	Niederlande	99	2
-EU	Polen	00	6
-EU	Polen	01	6
-EU	Polen	02	6
-EU	Polen	03	6
-EU	Polen	04	7
-EU	Polen	06	8
-EU	Polen	07	8
-EU	Polen	08	10
-EU	Polen	09	6
-EU	Polen	10	6
-EU	Polen	12	8
-EU	Polen	13	3
-EU	Polen	14	7
-EU	Polen	15	9
-EU	Polen	16	10
-EU	Polen	17	10
-EU	Polen	18	10
-EU	Polen	19	10
-EU	Polen	20	8
-EU	Polen	21	9
-EU	Polen	22	10
-EU	Polen	23	9
-EU	Polen	24	9
-EU	Polen	25	8
-EU	Polen	26	8
-EU	Polen	27	9
-EU	Polen	28	10
-EU	Polen	29	8
-EU	Polen	30	6
-EU	Polen	31	7
-EU	Polen	32	9
-EU	Polen	33	8
-EU	Polen	34	7
-EU	Polen	35	9
-EU	Polen	36	9
-EU	Polen	37	10
-EU	Polen	38	10
-EU	Polen	39	9
-EU	Polen	40	5
-EU	Polen	41	8
-EU	Polen	42	5
-EU	Polen	44	5
-EU	Polen	45	5
-EU	Polen	46	5
-EU	Polen	47	5
-EU	Polen	48	6
-EU	Polen	49	4
-EU	Polen	50	3
-EU	Polen	51	3
-EU	Polen	52	3
-EU	Polen	53	3
-EU	Polen	54	3
-EU	Polen	55	1
-EU	Polen	56	2
-EU	Polen	57	3
-EU	Polen	58	2
-EU	Polen	59	2
-EU	Polen	60	1
-EU	Polen	61	1
-EU	Polen	63	1
-EU	Polen	64	4
-EU	Polen	65	3
-EU	Polen	66	5
-EU	Polen	67	3
-EU	Polen	68	5
-EU	Polen	69	5
-EU	Polen	70	5
-EU	Polen	71	5
-EU	Polen	72	7
-EU	Polen	73	6
-EU	Polen	74	7
-EU	Polen	75	6
-EU	Polen	76	8
-EU	Polen	77	5
-EU	Polen	78	5
-EU	Polen	80	5
-EU	Polen	81	6
-EU	Polen	82	5
-EU	Polen	83	6
-EU	Polen	84	7
-EU	Polen	85	4
-EU	Polen	86	4
-EU	Polen	87	5
-EU	Polen	88	4
-EU	Polen	90	5
-EU	Polen	91	5
-EU	Polen	92	5
-EU	Polen	93	5
-EU	Polen	94	5
-EU	Polen	95	5
-EU	Polen	96	6
-EU	Polen	97	2
-EU	Polen	98	5
-EU	Polen	99	5
-EU	Portugal	10	1
-EU	Portugal	11	1
-EU	Portugal	12	1
-EU	Portugal	13	1
-EU	Portugal	14	1
-EU	Portugal	15	1
-EU	Portugal	16	1
-EU	Portugal	17	1
-EU	Portugal	18	1
-EU	Portugal	19	1
-EU	Portugal	20	2
-EU	Portugal	21	2
-EU	Portugal	22	2
-EU	Portugal	23	2
-EU	Portugal	24	2
-EU	Portugal	25	2
-EU	Portugal	26	1
-EU	Portugal	27	1
-EU	Portugal	28	2
-EU	Portugal	29	2
-EU	Portugal	30	3
-EU	Portugal	31	3
-EU	Portugal	32	3
-EU	Portugal	33	3
-EU	Portugal	34	3
-EU	Portugal	35	3
-EU	Portugal	36	3
-EU	Portugal	37	2
-EU	Portugal	38	2
-EU	Portugal	40	2
-EU	Portugal	41	2
-EU	Portugal	42	2
-EU	Portugal	43	2
-EU	Portugal	44	2
-EU	Portugal	45	2
-EU	Portugal	46	2
-EU	Portugal	47	2
-EU	Portugal	48	2
-EU	Portugal	49	3
-EU	Portugal	50	4
-EU	Portugal	51	4
-EU	Portugal	52	4
-EU	Portugal	53	4
-EU	Portugal	54	4
-EU	Portugal	60	4
-EU	Portugal	61	4
-EU	Portugal	62	4
-EU	Portugal	63	4
-EU	Portugal	64	4
-EU	Portugal	70	5
-EU	Portugal	71	5
-EU	Portugal	72	5
-EU	Portugal	73	5
-EU	Portugal	74	5
-EU	Portugal	75	5
-EU	Portugal	76	5
-EU	Portugal	77	5
-EU	Portugal	78	5
-EU	Portugal	79	5
-EU	Portugal	80	5
-EU	Portugal	81	5
-EU	Portugal	82	5
-EU	Portugal	83	5
-EU	Portugal	84	5
-EU	Portugal	85	5
-EU	Portugal	86	5
-EU	Portugal	87	5
-EU	Portugal	88	5
-EU	Portugal	89	5
-EU	RumÃ¤nien	00	10
-EU	RumÃ¤nien	01	3
-EU	RumÃ¤nien	02	3
-EU	RumÃ¤nien	03	3
-EU	RumÃ¤nien	04	3
-EU	RumÃ¤nien	06	3
-EU	RumÃ¤nien	07	3
-EU	RumÃ¤nien	08	3
-EU	RumÃ¤nien	12	4
-EU	RumÃ¤nien	13	3
-EU	RumÃ¤nien	14	4
-EU	RumÃ¤nien	20	4
-EU	RumÃ¤nien	21	5
-EU	RumÃ¤nien	22	5
-EU	RumÃ¤nien	23	4
-EU	RumÃ¤nien	30	7
-EU	RumÃ¤nien	31	8
-EU	RumÃ¤nien	32	8
-EU	RumÃ¤nien	33	7
-EU	RumÃ¤nien	40	1
-EU	RumÃ¤nien	41	2
-EU	RumÃ¤nien	42	2
-EU	RumÃ¤nien	44	3
-EU	RumÃ¤nien	50	3
-EU	RumÃ¤nien	51	5
-EU	RumÃ¤nien	52	6
-EU	RumÃ¤nien	53	5
-EU	RumÃ¤nien	54	5
-EU	RumÃ¤nien	55	1
-EU	RumÃ¤nien	60	6
-EU	RumÃ¤nien	61	5
-EU	RumÃ¤nien	70	6
-EU	RumÃ¤nien	71	8
-EU	RumÃ¤nien	80	6
-EU	RumÃ¤nien	81	5
-EU	RumÃ¤nien	82	5
-EU	RumÃ¤nien	90	5
-EU	RumÃ¤nien	91	4
-EU	RumÃ¤nien	92	4
-EU	Schweden	10	5
-EU	Schweden	11	5
-EU	Schweden	12	5
-EU	Schweden	13	5
-EU	Schweden	14	5
-EU	Schweden	15	5
-EU	Schweden	16	5
-EU	Schweden	17	5
-EU	Schweden	18	5
-EU	Schweden	19	5
-EU	Schweden	20	1
-EU	Schweden	21	1
-EU	Schweden	22	1
-EU	Schweden	23	1
-EU	Schweden	24	1
-EU	Schweden	25	2
-EU	Schweden	26	2
-EU	Schweden	27	1
-EU	Schweden	28	2
-EU	Schweden	29	1
-EU	Schweden	30	2
-EU	Schweden	31	2
-EU	Schweden	33	1
-EU	Schweden	34	2
-EU	Schweden	35	2
-EU	Schweden	36	2
-EU	Schweden	37	3
-EU	Schweden	38	3
-EU	Schweden	39	3
-EU	Schweden	40	3
-EU	Schweden	41	3
-EU	Schweden	42	3
-EU	Schweden	43	2
-EU	Schweden	44	2
-EU	Schweden	45	4
-EU	Schweden	46	3
-EU	Schweden	47	3
-EU	Schweden	50	2
-EU	Schweden	51	2
-EU	Schweden	52	3
-EU	Schweden	53	3
-EU	Schweden	54	3
-EU	Schweden	55	2
-EU	Schweden	56	2
-EU	Schweden	57	3
-EU	Schweden	58	3
-EU	Schweden	59	3
-EU	Schweden	60	4
-EU	Schweden	61	4
-EU	Schweden	62	6
-EU	Schweden	63	5
-EU	Schweden	64	5
-EU	Schweden	65	4
-EU	Schweden	66	4
-EU	Schweden	67	5
-EU	Schweden	68	5
-EU	Schweden	69	4
-EU	Schweden	70	4
-EU	Schweden	71	4
-EU	Schweden	72	5
-EU	Schweden	73	5
-EU	Schweden	74	5
-EU	Schweden	75	5
-EU	Schweden	76	5
-EU	Schweden	77	5
-EU	Schweden	78	5
-EU	Schweden	79	5
-EU	Schweden	80	6
-EU	Schweden	81	6
-EU	Schweden	82	6
-EU	Schweden	83	7
-EU	Schweden	84	6
-EU	Schweden	85	7
-EU	Schweden	86	7
-EU	Schweden	87	7
-EU	Schweden	88	7
-EU	Schweden	89	7
-EU	Schweden	90	7
-EU	Schweden	91	7
-EU	Schweden	92	7
-EU	Schweden	93	7
-EU	Schweden	94	8
-EU	Schweden	95	8
-EU	Schweden	96	8
-EU	Schweden	97	8
-EU	Schweden	98	8
-EU	Slowakai	00	10
-EU	Slowakai	02	3
-EU	Slowakai	03	3
-EU	Slowakai	04	4
-EU	Slowakai	06	4
-EU	Slowakai	07	4
-EU	Slowakai	08	4
-EU	Slowakai	09	4
-EU	Slowakai	40	1
-EU	Slowakai	90	2
-EU	Slowakai	91	3
-EU	Slowakai	92	2
-EU	Slowakai	93	2
-EU	Slowakai	94	2
-EU	Slowakai	95	2
-EU	Slowakai	96	3
-EU	Slowakai	97	1
-EU	Slowakai	98	4
-EU	Slowwenien	10	1
-EU	Slowwenien	11	1
-EU	Slowwenien	12	1
-EU	Slowwenien	13	1
-EU	Slowwenien	14	1
-EU	Slowwenien	15	1
-EU	Slowwenien	20	2
-EU	Slowwenien	22	2
-EU	Slowwenien	23	2
-EU	Slowwenien	24	2
-EU	Slowwenien	25	2
-EU	Slowwenien	29	2
-EU	Slowwenien	30	2
-EU	Slowwenien	32	2
-EU	Slowwenien	33	2
-EU	Slowwenien	35	2
-EU	Slowwenien	40	2
-EU	Slowwenien	42	2
-EU	Slowwenien	44	2
-EU	Slowwenien	50	2
-EU	Slowwenien	51	2
-EU	Slowwenien	52	2
-EU	Slowwenien	53	2
-EU	Slowwenien	60	2
-EU	Slowwenien	62	2
-EU	Slowwenien	63	2
-EU	Slowwenien	65	2
-EU	Slowwenien	67	2
-EU	Slowwenien	77	2
-EU	Slowwenien	80	2
-EU	Slowwenien	82	2
-EU	Slowwenien	83	2
-EU	Slowwenien	85	2
-EU	Slowwenien	90	2
-EU	Slowwenien	92	2
-EU	Spanien	01	1
-EU	Spanien	02	6
-EU	Spanien	03	4
-EU	Spanien	04	8
-EU	Spanien	05	5
-EU	Spanien	06	8
-EU	Spanien	07	9
-EU	Spanien	08	1
-EU	Spanien	09	4
-EU	Spanien	10	8
-EU	Spanien	11	9
-EU	Spanien	12	2
-EU	Spanien	13	6
-EU	Spanien	14	8
-EU	Spanien	15	8
-EU	Spanien	16	6
-EU	Spanien	17	2
-EU	Spanien	18	8
-EU	Spanien	19	5
-EU	Spanien	20	2
-EU	Spanien	21	9
-EU	Spanien	22	4
-EU	Spanien	23	8
-EU	Spanien	24	8
-EU	Spanien	25	2
-EU	Spanien	26	4
-EU	Spanien	27	8
-EU	Spanien	28	3
-EU	Spanien	29	8
-EU	Spanien	30	8
-EU	Spanien	31	2
-EU	Spanien	32	8
-EU	Spanien	33	8
-EU	Spanien	34	6
-EU	Spanien	35	10
-EU	Spanien	36	8
-EU	Spanien	37	7
-EU	Spanien	38	10
-EU	Spanien	39	4
-EU	Spanien	40	5
-EU	Spanien	41	8
-EU	Spanien	42	4
-EU	Spanien	43	2
-EU	Spanien	44	4
-EU	Spanien	45	5
-EU	Spanien	46	2
-EU	Spanien	47	4
-EU	Spanien	48	2
-EU	Spanien	49	7
-EU	Spanien	50	2
-EU	Tschechische Republik	00	10
-EU	Tschechische Republik	14	2
-EU	Tschechische Republik	16	2
-EU	Tschechische Republik	19	2
-EU	Tschechische Republik	20	2
-EU	Tschechische Republik	23	2
-EU	Tschechische Republik	25	2
-EU	Tschechische Republik	26	4
-EU	Tschechische Republik	27	4
-EU	Tschechische Republik	28	4
-EU	Tschechische Republik	30	1
-EU	Tschechische Republik	33	1
-EU	Tschechische Republik	35	4
-EU	Tschechische Republik	36	2
-EU	Tschechische Republik	37	6
-EU	Tschechische Republik	38	6
-EU	Tschechische Republik	39	4
-EU	Tschechische Republik	40	3
-EU	Tschechische Republik	41	3
-EU	Tschechische Republik	42	3
-EU	Tschechische Republik	44	4
-EU	Tschechische Republik	45	6
-EU	Tschechische Republik	46	4
-EU	Tschechische Republik	47	4
-EU	Tschechische Republik	48	9
-EU	Tschechische Republik	50	3
-EU	Tschechische Republik	51	4
-EU	Tschechische Republik	53	4
-EU	Tschechische Republik	54	5
-EU	Tschechische Republik	55	4
-EU	Tschechische Republik	56	5
-EU	Tschechische Republik	57	6
-EU	Tschechische Republik	58	5
-EU	Tschechische Republik	59	4
-EU	Tschechische Republik	60	3
-EU	Tschechische Republik	61	3
-EU	Tschechische Republik	64	3
-EU	Tschechische Republik	65	3
-EU	Tschechische Republik	66	3
-EU	Tschechische Republik	67	4
-EU	Tschechische Republik	68	4
-EU	Tschechische Republik	69	4
-EU	Tschechische Republik	70	5
-EU	Tschechische Republik	71	5
-EU	Tschechische Republik	72	5
-EU	Tschechische Republik	73	5
-EU	Tschechische Republik	74	5
-EU	Tschechische Republik	75	6
-EU	Tschechische Republik	76	6
-EU	Tschechische Republik	77	4
-EU	Tschechische Republik	78	5
-EU	Tschechische Republik	79	6
-EU	Ungarn	00	10
-EU	Ungarn	20	2
-EU	Ungarn	21	2
-EU	Ungarn	22	2
-EU	Ungarn	23	2
-EU	Ungarn	24	2
-EU	Ungarn	25	2
-EU	Ungarn	26	2
-EU	Ungarn	27	2
-EU	Ungarn	28	4
-EU	Ungarn	29	1
-EU	Ungarn	30	3
-EU	Ungarn	31	3
-EU	Ungarn	32	3
-EU	Ungarn	33	3
-EU	Ungarn	34	3
-EU	Ungarn	35	4
-EU	Ungarn	36	4
-EU	Ungarn	37	4
-EU	Ungarn	38	4
-EU	Ungarn	39	4
-EU	Ungarn	40	3
-EU	Ungarn	41	3
-EU	Ungarn	42	5
-EU	Ungarn	44	4
-EU	Ungarn	45	4
-EU	Ungarn	46	4
-EU	Ungarn	47	4
-EU	Ungarn	48	4
-EU	Ungarn	49	4
-EU	Ungarn	50	2
-EU	Ungarn	51	2
-EU	Ungarn	52	3
-EU	Ungarn	53	3
-EU	Ungarn	54	3
-EU	Ungarn	55	3
-EU	Ungarn	56	3
-EU	Ungarn	57	3
-EU	Ungarn	58	3
-EU	Ungarn	59	3
-EU	Ungarn	60	2
-EU	Ungarn	61	3
-EU	Ungarn	63	3
-EU	Ungarn	64	3
-EU	Ungarn	65	3
-EU	Ungarn	66	3
-EU	Ungarn	67	3
-EU	Ungarn	68	3
-EU	Ungarn	69	3
-EU	Ungarn	70	3
-EU	Ungarn	71	1
-EU	Ungarn	72	1
-EU	Ungarn	73	1
-EU	Ungarn	74	1
-EU	Ungarn	75	1
-EU	Ungarn	76	1
-EU	Ungarn	77	1
-EU	Ungarn	78	1
-EU	Ungarn	79	1
-EU	Ungarn	80	2
-EU	Ungarn	81	1
-EU	Ungarn	82	1
-EU	Ungarn	83	1
-EU	Ungarn	84	3
-EU	Ungarn	85	3
-EU	Ungarn	86	2
-EU	Ungarn	87	3
-EU	Ungarn	88	3
-EU	Ungarn	89	3
-EU	Ungarn	90	1
-EU	Ungarn	91	1
-EU	Ungarn	92	1
-EU	Ungarn	93	1
-EU	Ungarn	94	1
-EU	Ungarn	95	3
-EU	Ungarn	96	2
-EU	Ungarn	97	4
-EU	Ungarn	98	4
-EU	Ungarn	99	4
-EU	Ã–sterreich	00	10
-EU	Ã–sterreich	20	4
-EU	Ã–sterreich	21	2
-EU	Ã–sterreich	22	1
-EU	Ã–sterreich	23	1
-EU	Ã–sterreich	24	1
-EU	Ã–sterreich	25	1
-EU	Ã–sterreich	26	2
-EU	Ã–sterreich	27	1
-EU	Ã–sterreich	28	2
-EU	Ã–sterreich	30	1
-EU	Ã–sterreich	31	1
-EU	Ã–sterreich	32	2
-EU	Ã–sterreich	33	1
-EU	Ã–sterreich	34	1
-EU	Ã–sterreich	35	1
-EU	Ã–sterreich	36	1
-EU	Ã–sterreich	37	2
-EU	Ã–sterreich	38	3
-EU	Ã–sterreich	40	1
-EU	Ã–sterreich	41	2
-EU	Ã–sterreich	42	1
-EU	Ã–sterreich	44	1
-EU	Ã–sterreich	45	1
-EU	Ã–sterreich	46	1
-EU	Ã–sterreich	47	1
-EU	Ã–sterreich	48	2
-EU	Ã–sterreich	49	1
-EU	Ã–sterreich	50	1
-EU	Ã–sterreich	51	1
-EU	Ã–sterreich	52	1
-EU	Ã–sterreich	53	1
-EU	Ã–sterreich	54	1
-EU	Ã–sterreich	55	3
-EU	Ã–sterreich	56	3
-EU	Ã–sterreich	57	3
-EU	Ã–sterreich	60	1
-EU	Ã–sterreich	61	1
-EU	Ã–sterreich	63	2
-EU	Ã–sterreich	64	2
-EU	Ã–sterreich	65	3
-EU	Ã–sterreich	66	3
-EU	Ã–sterreich	67	3
-EU	Ã–sterreich	68	3
-EU	Ã–sterreich	70	1
-EU	Ã–sterreich	71	2
-EU	Ã–sterreich	72	2
-EU	Ã–sterreich	73	3
-EU	Ã–sterreich	74	6
-EU	Ã–sterreich	75	6
-EU	Ã–sterreich	80	4
-EU	Ã–sterreich	81	5
-EU	Ã–sterreich	82	5
-EU	Ã–sterreich	83	5
-EU	Ã–sterreich	84	4
-EU	Ã–sterreich	85	4
-EU	Ã–sterreich	89	6
-EU	Ã–sterreich	90	4
-EU	Ã–sterreich	91	4
-EU	Ã–sterreich	92	4
-EU	Ã–sterreich	93	5
-EU	Ã–sterreich	94	6
-EU	Ã–sterreich	95	4
-EU	Ã–sterreich	96	4
-EU	Ã–sterreich	97	4
-EU	Ã–sterreich	98	5
-EU	Ã–sterreich	99	6
+scope,country,plz,zone
+DE,Deutschland,01,6
+DE,Deutschland,02,7
+DE,Deutschland,03,6
+DE,Deutschland,04,5
+DE,Deutschland,06,4
+DE,Deutschland,07,6
+DE,Deutschland,08,6
+DE,Deutschland,09,6
+DE,Deutschland,10,5
+DE,Deutschland,12,5
+DE,Deutschland,13,5
+DE,Deutschland,14,5
+DE,Deutschland,15,6
+DE,Deutschland,16,6
+DE,Deutschland,17,7
+DE,Deutschland,18,6
+DE,Deutschland,19,5
+DE,Deutschland,20,3
+DE,Deutschland,21,3
+DE,Deutschland,22,3
+DE,Deutschland,23,4
+DE,Deutschland,24,5
+DE,Deutschland,25,5
+DE,Deutschland,26,4
+DE,Deutschland,27,3
+DE,Deutschland,28,3
+DE,Deutschland,29,2
+DE,Deutschland,30,1
+DE,Deutschland,31,1
+DE,Deutschland,32,2
+DE,Deutschland,33,3
+DE,Deutschland,34,3
+DE,Deutschland,35,5
+DE,Deutschland,36,4
+DE,Deutschland,37,2
+DE,Deutschland,38,2
+DE,Deutschland,39,3
+DE,Deutschland,40,5
+DE,Deutschland,41,6
+DE,Deutschland,42,5
+DE,Deutschland,44,4
+DE,Deutschland,45,5
+DE,Deutschland,46,5
+DE,Deutschland,47,6
+DE,Deutschland,48,4
+DE,Deutschland,49,4
+DE,Deutschland,50,6
+DE,Deutschland,51,6
+DE,Deutschland,52,6
+DE,Deutschland,53,6
+DE,Deutschland,54,8
+DE,Deutschland,55,7
+DE,Deutschland,56,6
+DE,Deutschland,57,6
+DE,Deutschland,58,5
+DE,Deutschland,59,4
+DE,Deutschland,60,6
+DE,Deutschland,61,6
+DE,Deutschland,63,6
+DE,Deutschland,64,6
+DE,Deutschland,65,6
+DE,Deutschland,66,8
+DE,Deutschland,67,7
+DE,Deutschland,68,7
+DE,Deutschland,69,7
+DE,Deutschland,70,8
+DE,Deutschland,71,8
+DE,Deutschland,72,9
+DE,Deutschland,73,8
+DE,Deutschland,74,7
+DE,Deutschland,75,8
+DE,Deutschland,76,8
+DE,Deutschland,77,9
+DE,Deutschland,78,10
+DE,Deutschland,79,10
+DE,Deutschland,80,10
+DE,Deutschland,81,10
+DE,Deutschland,84,10
+DE,Deutschland,85,9
+DE,Deutschland,86,9
+DE,Deutschland,87,10
+DE,Deutschland,88,10
+DE,Deutschland,89,8
+DE,Deutschland,90,7
+DE,Deutschland,91,7
+DE,Deutschland,92,8
+DE,Deutschland,93,9
+DE,Deutschland,94,10
+DE,Deutschland,95,7
+DE,Deutschland,96,6
+DE,Deutschland,97,6
+DE,Deutschland,98,5
+DE,Deutschland,99,4
+EU,Belgien,00,10
+EU,Belgien,20,1
+EU,Belgien,21,1
+EU,Belgien,22,1
+EU,Belgien,23,1
+EU,Belgien,24,1
+EU,Belgien,25,1
+EU,Belgien,26,1
+EU,Belgien,27,1
+EU,Belgien,28,1
+EU,Belgien,29,1
+EU,Belgien,30,1
+EU,Belgien,31,1
+EU,Belgien,32,1
+EU,Belgien,33,1
+EU,Belgien,34,1
+EU,Belgien,35,1
+EU,Belgien,36,1
+EU,Belgien,37,1
+EU,Belgien,38,1
+EU,Belgien,39,1
+EU,Belgien,40,1
+EU,Belgien,41,1
+EU,Belgien,42,1
+EU,Belgien,44,1
+EU,Belgien,45,1
+EU,Belgien,46,1
+EU,Belgien,47,1
+EU,Belgien,48,1
+EU,Belgien,49,1
+EU,Belgien,50,2
+EU,Belgien,51,2
+EU,Belgien,52,2
+EU,Belgien,53,2
+EU,Belgien,55,2
+EU,Belgien,56,2
+EU,Belgien,60,2
+EU,Belgien,61,2
+EU,Belgien,63,2
+EU,Belgien,64,2
+EU,Belgien,66,2
+EU,Belgien,67,2
+EU,Belgien,70,2
+EU,Belgien,71,2
+EU,Belgien,73,2
+EU,Belgien,75,2
+EU,Belgien,76,2
+EU,Belgien,77,2
+EU,Belgien,78,2
+EU,Belgien,80,2
+EU,Belgien,83,2
+EU,Belgien,85,2
+EU,Belgien,86,2
+EU,Belgien,87,2
+EU,Belgien,88,2
+EU,Belgien,89,2
+EU,Belgien,90,1
+EU,Belgien,92,1
+EU,Belgien,93,1
+EU,Belgien,94,1
+EU,Belgien,95,1
+EU,Belgien,96,1
+EU,Belgien,97,1
+EU,Belgien,98,1
+EU,Belgien,99,1
+EU,Bulgarien,00,10
+EU,Bulgarien,20,1
+EU,Bulgarien,21,1
+EU,Bulgarien,22,1
+EU,Bulgarien,23,1
+EU,Bulgarien,24,1
+EU,Bulgarien,25,1
+EU,Bulgarien,26,1
+EU,Bulgarien,27,2
+EU,Bulgarien,28,2
+EU,Bulgarien,29,2
+EU,Bulgarien,30,2
+EU,Bulgarien,31,1
+EU,Bulgarien,32,2
+EU,Bulgarien,33,2
+EU,Bulgarien,34,2
+EU,Bulgarien,35,1
+EU,Bulgarien,36,2
+EU,Bulgarien,37,2
+EU,Bulgarien,38,2
+EU,Bulgarien,39,2
+EU,Bulgarien,40,2
+EU,Bulgarien,41,3
+EU,Bulgarien,42,3
+EU,Bulgarien,44,1
+EU,Bulgarien,45,4
+EU,Bulgarien,46,4
+EU,Bulgarien,47,4
+EU,Bulgarien,48,4
+EU,Bulgarien,49,4
+EU,Bulgarien,50,4
+EU,Bulgarien,51,4
+EU,Bulgarien,52,4
+EU,Bulgarien,53,4
+EU,Bulgarien,54,4
+EU,Bulgarien,55,4
+EU,Bulgarien,56,4
+EU,Bulgarien,57,4
+EU,Bulgarien,58,4
+EU,Bulgarien,59,4
+EU,Bulgarien,60,2
+EU,Bulgarien,61,2
+EU,Bulgarien,63,3
+EU,Bulgarien,64,3
+EU,Bulgarien,65,3
+EU,Bulgarien,66,3
+EU,Bulgarien,67,3
+EU,Bulgarien,68,4
+EU,Bulgarien,69,4
+EU,Bulgarien,70,3
+EU,Bulgarien,71,3
+EU,Bulgarien,72,3
+EU,Bulgarien,73,3
+EU,Bulgarien,74,4
+EU,Bulgarien,75,4
+EU,Bulgarien,76,4
+EU,Bulgarien,77,4
+EU,Bulgarien,78,4
+EU,Bulgarien,79,4
+EU,Bulgarien,80,4
+EU,Bulgarien,81,4
+EU,Bulgarien,82,4
+EU,Bulgarien,83,4
+EU,Bulgarien,84,4
+EU,Bulgarien,85,4
+EU,Bulgarien,86,3
+EU,Bulgarien,87,3
+EU,Bulgarien,88,3
+EU,Bulgarien,89,3
+EU,Bulgarien,90,4
+EU,Bulgarien,91,4
+EU,Bulgarien,92,4
+EU,Bulgarien,93,4
+EU,Bulgarien,94,4
+EU,Bulgarien,95,4
+EU,Bulgarien,96,4
+EU,Bulgarien,97,4
+EU,Bulgarien,98,2
+EU,Bulgarien,99,2
+EU,Dänemark,09,4
+EU,Dänemark,10,4
+EU,Dänemark,11,4
+EU,Dänemark,12,4
+EU,Dänemark,13,4
+EU,Dänemark,14,4
+EU,Dänemark,15,4
+EU,Dänemark,16,4
+EU,Dänemark,17,4
+EU,Dänemark,18,4
+EU,Dänemark,19,4
+EU,Dänemark,20,4
+EU,Dänemark,21,4
+EU,Dänemark,22,4
+EU,Dänemark,23,4
+EU,Dänemark,24,4
+EU,Dänemark,25,4
+EU,Dänemark,26,3
+EU,Dänemark,27,3
+EU,Dänemark,28,3
+EU,Dänemark,29,3
+EU,Dänemark,30,4
+EU,Dänemark,31,4
+EU,Dänemark,32,4
+EU,Dänemark,33,4
+EU,Dänemark,34,4
+EU,Dänemark,35,4
+EU,Dänemark,36,4
+EU,Dänemark,37,5
+EU,Dänemark,40,4
+EU,Dänemark,41,4
+EU,Dänemark,42,4
+EU,Dänemark,43,4
+EU,Dänemark,44,4
+EU,Dänemark,45,4
+EU,Dänemark,46,4
+EU,Dänemark,47,4
+EU,Dänemark,48,4
+EU,Dänemark,49,4
+EU,Dänemark,50,1
+EU,Dänemark,51,1
+EU,Dänemark,52,1
+EU,Dänemark,53,1
+EU,Dänemark,54,1
+EU,Dänemark,55,1
+EU,Dänemark,56,1
+EU,Dänemark,57,1
+EU,Dänemark,58,1
+EU,Dänemark,59,2
+EU,Dänemark,60,1
+EU,Dänemark,61,1
+EU,Dänemark,62,1
+EU,Dänemark,63,1
+EU,Dänemark,64,1
+EU,Dänemark,65,1
+EU,Dänemark,66,1
+EU,Dänemark,67,1
+EU,Dänemark,68,1
+EU,Dänemark,69,1
+EU,Dänemark,70,1
+EU,Dänemark,71,1
+EU,Dänemark,72,1
+EU,Dänemark,73,1
+EU,Dänemark,74,1
+EU,Dänemark,75,2
+EU,Dänemark,76,2
+EU,Dänemark,77,2
+EU,Dänemark,78,2
+EU,Dänemark,79,2
+EU,Dänemark,80,1
+EU,Dänemark,81,1
+EU,Dänemark,82,1
+EU,Dänemark,83,1
+EU,Dänemark,84,2
+EU,Dänemark,85,2
+EU,Dänemark,86,1
+EU,Dänemark,87,1
+EU,Dänemark,88,2
+EU,Dänemark,89,2
+EU,Dänemark,90,2
+EU,Dänemark,91,2
+EU,Dänemark,92,2
+EU,Dänemark,93,2
+EU,Dänemark,94,2
+EU,Dänemark,95,2
+EU,Dänemark,96,2
+EU,Dänemark,97,2
+EU,Dänemark,98,2
+EU,Dänemark,99,2
+EU,Estland,00,10
+EU,Estland,20,4
+EU,Estland,21,4
+EU,Estland,29,4
+EU,Estland,30,3
+EU,Estland,31,3
+EU,Estland,40,3
+EU,Estland,41,3
+EU,Estland,42,4
+EU,Estland,44,2
+EU,Estland,45,2
+EU,Estland,46,2
+EU,Estland,47,8
+EU,Estland,49,3
+EU,Estland,50,1
+EU,Estland,51,1
+EU,Estland,60,2
+EU,Estland,61,2
+EU,Estland,67,3
+EU,Estland,68,3
+EU,Estland,69,3
+EU,Estland,70,3
+EU,Estland,71,2
+EU,Estland,72,2
+EU,Estland,73,2
+EU,Estland,74,2
+EU,Estland,75,2
+EU,Estland,76,2
+EU,Estland,78,2
+EU,Estland,79,2
+EU,Estland,80,2
+EU,Estland,85,2
+EU,Estland,86,3
+EU,Estland,88,4
+EU,Estland,90,2
+EU,Finnland,00,1
+EU,Finnland,01,1
+EU,Finnland,02,1
+EU,Finnland,03,2
+EU,Finnland,04,1
+EU,Finnland,05,2
+EU,Finnland,06,1
+EU,Finnland,07,2
+EU,Finnland,08,2
+EU,Finnland,09,3
+EU,Finnland,10,3
+EU,Finnland,11,1
+EU,Finnland,12,2
+EU,Finnland,13,1
+EU,Finnland,14,3
+EU,Finnland,15,1
+EU,Finnland,16,2
+EU,Finnland,17,3
+EU,Finnland,18,2
+EU,Finnland,19,4
+EU,Finnland,20,1
+EU,Finnland,21,2
+EU,Finnland,22,7
+EU,Finnland,23,2
+EU,Finnland,24,2
+EU,Finnland,25,2
+EU,Finnland,26,2
+EU,Finnland,27,3
+EU,Finnland,28,2
+EU,Finnland,29,2
+EU,Finnland,30,1
+EU,Finnland,31,2
+EU,Finnland,32,2
+EU,Finnland,33,2
+EU,Finnland,34,2
+EU,Finnland,35,3
+EU,Finnland,36,2
+EU,Finnland,37,2
+EU,Finnland,38,2
+EU,Finnland,39,2
+EU,Finnland,40,2
+EU,Finnland,41,2
+EU,Finnland,42,2
+EU,Finnland,43,4
+EU,Finnland,44,4
+EU,Finnland,45,1
+EU,Finnland,46,3
+EU,Finnland,47,2
+EU,Finnland,48,1
+EU,Finnland,49,3
+EU,Finnland,50,2
+EU,Finnland,51,2
+EU,Finnland,52,4
+EU,Finnland,53,2
+EU,Finnland,54,4
+EU,Finnland,55,2
+EU,Finnland,56,4
+EU,Finnland,57,2
+EU,Finnland,58,4
+EU,Finnland,59,5
+EU,Finnland,60,2
+EU,Finnland,61,3
+EU,Finnland,62,3
+EU,Finnland,63,3
+EU,Finnland,64,3
+EU,Finnland,65,2
+EU,Finnland,66,3
+EU,Finnland,67,2
+EU,Finnland,68,3
+EU,Finnland,69,5
+EU,Finnland,70,2
+EU,Finnland,71,3
+EU,Finnland,72,3
+EU,Finnland,73,4
+EU,Finnland,74,4
+EU,Finnland,75,5
+EU,Finnland,76,5
+EU,Finnland,77,4
+EU,Finnland,78,3
+EU,Finnland,79,4
+EU,Finnland,80,2
+EU,Finnland,81,4
+EU,Finnland,82,4
+EU,Finnland,83,4
+EU,Finnland,84,4
+EU,Finnland,85,5
+EU,Finnland,86,6
+EU,Finnland,87,3
+EU,Finnland,88,4
+EU,Finnland,89,6
+EU,Finnland,90,3
+EU,Finnland,91,5
+EU,Finnland,92,5
+EU,Finnland,93,6
+EU,Finnland,94,6
+EU,Finnland,95,7
+EU,Finnland,96,5
+EU,Finnland,97,8
+EU,Finnland,98,8
+EU,Finnland,99,8
+EU,Frankreich,01,2
+EU,Frankreich,02,1
+EU,Frankreich,03,2
+EU,Frankreich,04,9
+EU,Frankreich,05,10
+EU,Frankreich,06,6
+EU,Frankreich,07,3
+EU,Frankreich,08,2
+EU,Frankreich,09,8
+EU,Frankreich,10,4
+EU,Frankreich,11,9
+EU,Frankreich,12,8
+EU,Frankreich,13,5
+EU,Frankreich,14,3
+EU,Frankreich,15,9
+EU,Frankreich,16,9
+EU,Frankreich,17,10
+EU,Frankreich,18,4
+EU,Frankreich,19,10
+EU,Frankreich,20,10
+EU,Frankreich,21,2
+EU,Frankreich,22,8
+EU,Frankreich,23,8
+EU,Frankreich,24,8
+EU,Frankreich,25,5
+EU,Frankreich,26,2
+EU,Frankreich,27,4
+EU,Frankreich,28,2
+EU,Frankreich,29,9
+EU,Frankreich,30,5
+EU,Frankreich,31,7
+EU,Frankreich,32,8
+EU,Frankreich,33,6
+EU,Frankreich,34,2
+EU,Frankreich,35,6
+EU,Frankreich,36,5
+EU,Frankreich,37,3
+EU,Frankreich,38,3
+EU,Frankreich,39,3
+EU,Frankreich,40,9
+EU,Frankreich,41,5
+EU,Frankreich,42,2
+EU,Frankreich,43,2
+EU,Frankreich,44,8
+EU,Frankreich,45,7
+EU,Frankreich,46,8
+EU,Frankreich,47,9
+EU,Frankreich,48,5
+EU,Frankreich,49,5
+EU,Frankreich,50,3
+EU,Frankreich,51,2
+EU,Frankreich,52,2
+EU,Frankreich,53,8
+EU,Frankreich,54,6
+EU,Frankreich,55,5
+EU,Frankreich,56,8
+EU,Frankreich,57,7
+EU,Frankreich,58,7
+EU,Frankreich,59,1
+EU,Frankreich,60,1
+EU,Frankreich,61,5
+EU,Frankreich,62,1
+EU,Frankreich,63,2
+EU,Frankreich,64,10
+EU,Frankreich,65,9
+EU,Frankreich,66,3
+EU,Frankreich,67,1
+EU,Frankreich,68,1
+EU,Frankreich,69,1
+EU,Frankreich,70,2
+EU,Frankreich,71,2
+EU,Frankreich,72,5
+EU,Frankreich,73,2
+EU,Frankreich,74,7
+EU,Frankreich,75,1
+EU,Frankreich,76,4
+EU,Frankreich,77,2
+EU,Frankreich,78,5
+EU,Frankreich,79,7
+EU,Frankreich,80,2
+EU,Frankreich,81,8
+EU,Frankreich,82,7
+EU,Frankreich,83,5
+EU,Frankreich,84,3
+EU,Frankreich,85,5
+EU,Frankreich,86,5
+EU,Frankreich,87,5
+EU,Frankreich,88,3
+EU,Frankreich,89,5
+EU,Frankreich,90,3
+EU,Frankreich,91,5
+EU,Frankreich,92,1
+EU,Frankreich,93,1
+EU,Frankreich,94,1
+EU,Frankreich,95,1
+EU,Frankreich,98,6
+EU,Griechenland,00,10
+EU,Griechenland,20,3
+EU,Griechenland,21,3
+EU,Griechenland,22,3
+EU,Griechenland,23,6
+EU,Griechenland,24,6
+EU,Griechenland,25,3
+EU,Griechenland,26,6
+EU,Griechenland,27,6
+EU,Griechenland,28,6
+EU,Griechenland,29,6
+EU,Griechenland,30,6
+EU,Griechenland,31,3
+EU,Griechenland,32,3
+EU,Griechenland,33,3
+EU,Griechenland,34,3
+EU,Griechenland,35,6
+EU,Griechenland,36,6
+EU,Griechenland,37,5
+EU,Griechenland,38,3
+EU,Griechenland,40,2
+EU,Griechenland,41,5
+EU,Griechenland,42,3
+EU,Griechenland,44,2
+EU,Griechenland,45,5
+EU,Griechenland,46,3
+EU,Griechenland,47,3
+EU,Griechenland,48,5
+EU,Griechenland,49,3
+EU,Griechenland,50,3
+EU,Griechenland,60,2
+EU,Griechenland,61,2
+EU,Griechenland,63,3
+EU,Griechenland,64,3
+EU,Griechenland,65,5
+EU,Griechenland,66,3
+EU,Griechenland,67,5
+EU,Griechenland,68,5
+EU,Griechenland,69,6
+EU,Griechenland,70,6
+EU,Griechenland,71,6
+EU,Griechenland,72,6
+EU,Griechenland,73,6
+EU,Griechenland,74,6
+EU,Griechenland,80,6
+EU,Griechenland,81,6
+EU,Griechenland,82,6
+EU,Griechenland,83,6
+EU,Griechenland,84,6
+EU,Italien,00,10
+EU,Italien,01,10
+EU,Italien,02,10
+EU,Italien,03,9
+EU,Italien,04,9
+EU,Italien,06,10
+EU,Italien,07,10
+EU,Italien,08,10
+EU,Italien,09,7
+EU,Italien,10,3
+EU,Italien,12,5
+EU,Italien,13,4
+EU,Italien,14,6
+EU,Italien,15,4
+EU,Italien,16,2
+EU,Italien,17,4
+EU,Italien,18,7
+EU,Italien,19,5
+EU,Italien,20,1
+EU,Italien,21,2
+EU,Italien,22,3
+EU,Italien,23,4
+EU,Italien,24,3
+EU,Italien,25,2
+EU,Italien,26,5
+EU,Italien,27,3
+EU,Italien,28,4
+EU,Italien,30,5
+EU,Italien,31,5
+EU,Italien,32,5
+EU,Italien,33,6
+EU,Italien,34,6
+EU,Italien,35,2
+EU,Italien,36,2
+EU,Italien,37,1
+EU,Italien,38,4
+EU,Italien,39,3
+EU,Italien,40,2
+EU,Italien,41,2
+EU,Italien,42,4
+EU,Italien,44,2
+EU,Italien,45,3
+EU,Italien,46,2
+EU,Italien,47,5
+EU,Italien,48,3
+EU,Italien,50,2
+EU,Italien,51,3
+EU,Italien,52,5
+EU,Italien,53,5
+EU,Italien,54,6
+EU,Italien,55,5
+EU,Italien,56,4
+EU,Italien,57,6
+EU,Italien,60,5
+EU,Italien,61,7
+EU,Italien,63,2
+EU,Italien,64,3
+EU,Italien,65,4
+EU,Italien,66,6
+EU,Italien,67,6
+EU,Italien,70,3
+EU,Italien,71,8
+EU,Italien,72,7
+EU,Italien,73,8
+EU,Italien,74,6
+EU,Italien,75,7
+EU,Italien,76,7
+EU,Italien,80,5
+EU,Italien,81,6
+EU,Italien,82,6
+EU,Italien,83,6
+EU,Italien,84,7
+EU,Italien,85,8
+EU,Italien,86,7
+EU,Italien,87,10
+EU,Italien,88,10
+EU,Italien,90,5
+EU,Italien,91,9
+EU,Italien,92,8
+EU,Italien,93,8
+EU,Italien,94,8
+EU,Italien,95,9
+EU,Italien,96,9
+EU,Kroatien,10,1
+EU,Kroatien,20,5
+EU,Kroatien,21,4
+EU,Kroatien,22,4
+EU,Kroatien,23,4
+EU,Kroatien,31,3
+EU,Kroatien,32,3
+EU,Kroatien,33,3
+EU,Kroatien,34,3
+EU,Kroatien,35,3
+EU,Kroatien,40,2
+EU,Kroatien,42,2
+EU,Kroatien,43,2
+EU,Kroatien,44,2
+EU,Kroatien,47,2
+EU,Kroatien,48,2
+EU,Kroatien,49,2
+EU,Kroatien,51,3
+EU,Kroatien,52,4
+EU,Kroatien,53,3
+EU,Lettland,00,10
+EU,Lettland,20,1
+EU,Lettland,21,1
+EU,Lettland,30,2
+EU,Lettland,31,2
+EU,Lettland,39,2
+EU,Lettland,40,3
+EU,Lettland,41,3
+EU,Lettland,42,1
+EU,Lettland,44,3
+EU,Lettland,45,3
+EU,Lettland,46,3
+EU,Lettland,47,3
+EU,Lettland,48,2
+EU,Lettland,50,2
+EU,Lettland,51,2
+EU,Lettland,52,2
+EU,Lettland,53,3
+EU,Lettland,54,3
+EU,Lettland,57,3
+EU,Litauen,00,4
+EU,Litauen,01,1
+EU,Litauen,02,1
+EU,Litauen,03,1
+EU,Litauen,04,1
+EU,Litauen,06,1
+EU,Litauen,07,1
+EU,Litauen,08,1
+EU,Litauen,09,1
+EU,Litauen,10,1
+EU,Litauen,12,1
+EU,Litauen,13,1
+EU,Litauen,14,2
+EU,Litauen,15,2
+EU,Litauen,17,2
+EU,Litauen,18,2
+EU,Litauen,19,2
+EU,Litauen,20,2
+EU,Litauen,21,2
+EU,Litauen,26,2
+EU,Litauen,27,1
+EU,Litauen,28,2
+EU,Litauen,29,2
+EU,Litauen,30,3
+EU,Litauen,31,3
+EU,Litauen,35,2
+EU,Litauen,36,2
+EU,Litauen,37,2
+EU,Litauen,38,2
+EU,Litauen,39,2
+EU,Litauen,40,2
+EU,Litauen,41,3
+EU,Litauen,42,3
+EU,Litauen,44,1
+EU,Litauen,45,1
+EU,Litauen,46,1
+EU,Litauen,47,1
+EU,Litauen,48,1
+EU,Litauen,49,1
+EU,Litauen,50,1
+EU,Litauen,51,1
+EU,Litauen,52,1
+EU,Litauen,53,1
+EU,Litauen,54,1
+EU,Litauen,55,1
+EU,Litauen,56,1
+EU,Litauen,57,2
+EU,Litauen,58,2
+EU,Litauen,59,1
+EU,Litauen,60,3
+EU,Litauen,63,2
+EU,Litauen,64,2
+EU,Litauen,65,3
+EU,Litauen,66,3
+EU,Litauen,67,3
+EU,Litauen,68,2
+EU,Litauen,69,2
+EU,Litauen,70,2
+EU,Litauen,72,4
+EU,Litauen,73,4
+EU,Litauen,74,4
+EU,Litauen,75,4
+EU,Litauen,76,2
+EU,Litauen,77,2
+EU,Litauen,78,2
+EU,Litauen,79,2
+EU,Litauen,80,3
+EU,Litauen,81,3
+EU,Litauen,82,3
+EU,Litauen,83,3
+EU,Litauen,84,3
+EU,Litauen,85,3
+EU,Litauen,86,3
+EU,Litauen,87,3
+EU,Litauen,88,3
+EU,Litauen,89,3
+EU,Litauen,90,4
+EU,Litauen,91,2
+EU,Litauen,92,2
+EU,Litauen,93,4
+EU,Litauen,94,4
+EU,Litauen,95,4
+EU,Litauen,96,3
+EU,Litauen,97,3
+EU,Litauen,98,4
+EU,Litauen,99,4
+EU,Luxemburg,10,1
+EU,Luxemburg,11,1
+EU,Luxemburg,12,1
+EU,Luxemburg,13,1
+EU,Luxemburg,14,1
+EU,Luxemburg,15,1
+EU,Luxemburg,16,1
+EU,Luxemburg,17,1
+EU,Luxemburg,18,1
+EU,Luxemburg,19,1
+EU,Luxemburg,20,1
+EU,Luxemburg,21,1
+EU,Luxemburg,22,1
+EU,Luxemburg,23,1
+EU,Luxemburg,24,1
+EU,Luxemburg,25,1
+EU,Luxemburg,26,1
+EU,Luxemburg,27,1
+EU,Luxemburg,29,1
+EU,Luxemburg,32,1
+EU,Luxemburg,33,1
+EU,Luxemburg,34,1
+EU,Luxemburg,35,1
+EU,Luxemburg,36,1
+EU,Luxemburg,37,1
+EU,Luxemburg,38,1
+EU,Luxemburg,39,1
+EU,Luxemburg,40,1
+EU,Luxemburg,41,1
+EU,Luxemburg,42,1
+EU,Luxemburg,43,1
+EU,Luxemburg,44,1
+EU,Luxemburg,45,1
+EU,Luxemburg,46,1
+EU,Luxemburg,47,1
+EU,Luxemburg,48,1
+EU,Luxemburg,49,1
+EU,Luxemburg,52,1
+EU,Luxemburg,53,1
+EU,Luxemburg,54,1
+EU,Luxemburg,55,1
+EU,Luxemburg,56,1
+EU,Luxemburg,57,1
+EU,Luxemburg,58,1
+EU,Luxemburg,59,1
+EU,Luxemburg,61,1
+EU,Luxemburg,62,1
+EU,Luxemburg,63,1
+EU,Luxemburg,64,1
+EU,Luxemburg,65,1
+EU,Luxemburg,66,1
+EU,Luxemburg,67,1
+EU,Luxemburg,68,1
+EU,Luxemburg,69,1
+EU,Luxemburg,72,1
+EU,Luxemburg,73,1
+EU,Luxemburg,74,1
+EU,Luxemburg,75,1
+EU,Luxemburg,76,1
+EU,Luxemburg,77,2
+EU,Luxemburg,80,1
+EU,Luxemburg,81,1
+EU,Luxemburg,82,1
+EU,Luxemburg,83,1
+EU,Luxemburg,84,1
+EU,Luxemburg,85,2
+EU,Luxemburg,86,2
+EU,Luxemburg,87,2
+EU,Luxemburg,88,2
+EU,Luxemburg,90,2
+EU,Luxemburg,91,2
+EU,Luxemburg,92,2
+EU,Luxemburg,93,2
+EU,Luxemburg,94,2
+EU,Luxemburg,95,2
+EU,Luxemburg,96,2
+EU,Luxemburg,97,2
+EU,Luxemburg,98,2
+EU,Luxemburg,99,2
+EU,Niederlande,00,10
+EU,Niederlande,20,1
+EU,Niederlande,21,1
+EU,Niederlande,22,1
+EU,Niederlande,23,1
+EU,Niederlande,24,1
+EU,Niederlande,25,1
+EU,Niederlande,26,1
+EU,Niederlande,27,1
+EU,Niederlande,28,1
+EU,Niederlande,29,2
+EU,Niederlande,30,3
+EU,Niederlande,31,3
+EU,Niederlande,32,2
+EU,Niederlande,33,1
+EU,Niederlande,34,1
+EU,Niederlande,35,1
+EU,Niederlande,36,1
+EU,Niederlande,37,1
+EU,Niederlande,38,1
+EU,Niederlande,39,1
+EU,Niederlande,40,1
+EU,Niederlande,41,1
+EU,Niederlande,42,1
+EU,Niederlande,44,1
+EU,Niederlande,45,1
+EU,Niederlande,46,1
+EU,Niederlande,47,1
+EU,Niederlande,48,1
+EU,Niederlande,49,1
+EU,Niederlande,50,1
+EU,Niederlande,51,1
+EU,Niederlande,52,1
+EU,Niederlande,53,1
+EU,Niederlande,54,1
+EU,Niederlande,55,1
+EU,Niederlande,56,1
+EU,Niederlande,57,1
+EU,Niederlande,58,1
+EU,Niederlande,59,1
+EU,Niederlande,60,1
+EU,Niederlande,61,1
+EU,Niederlande,63,1
+EU,Niederlande,64,1
+EU,Niederlande,65,1
+EU,Niederlande,66,1
+EU,Niederlande,67,1
+EU,Niederlande,68,1
+EU,Niederlande,69,1
+EU,Niederlande,70,1
+EU,Niederlande,71,1
+EU,Niederlande,72,1
+EU,Niederlande,73,2
+EU,Niederlande,74,2
+EU,Niederlande,75,2
+EU,Niederlande,76,2
+EU,Niederlande,77,2
+EU,Niederlande,78,2
+EU,Niederlande,79,2
+EU,Niederlande,80,2
+EU,Niederlande,81,2
+EU,Niederlande,82,2
+EU,Niederlande,83,2
+EU,Niederlande,84,2
+EU,Niederlande,85,2
+EU,Niederlande,86,2
+EU,Niederlande,87,2
+EU,Niederlande,88,2
+EU,Niederlande,89,2
+EU,Niederlande,90,2
+EU,Niederlande,91,2
+EU,Niederlande,92,2
+EU,Niederlande,93,2
+EU,Niederlande,94,2
+EU,Niederlande,95,2
+EU,Niederlande,96,2
+EU,Niederlande,97,2
+EU,Niederlande,98,2
+EU,Niederlande,99,2
+EU,Polen,00,6
+EU,Polen,01,6
+EU,Polen,02,6
+EU,Polen,03,6
+EU,Polen,04,7
+EU,Polen,06,8
+EU,Polen,07,8
+EU,Polen,08,10
+EU,Polen,09,6
+EU,Polen,10,6
+EU,Polen,12,8
+EU,Polen,13,3
+EU,Polen,14,7
+EU,Polen,15,9
+EU,Polen,16,10
+EU,Polen,17,10
+EU,Polen,18,10
+EU,Polen,19,10
+EU,Polen,20,8
+EU,Polen,21,9
+EU,Polen,22,10
+EU,Polen,23,9
+EU,Polen,24,9
+EU,Polen,25,8
+EU,Polen,26,8
+EU,Polen,27,9
+EU,Polen,28,10
+EU,Polen,29,8
+EU,Polen,30,6
+EU,Polen,31,7
+EU,Polen,32,9
+EU,Polen,33,8
+EU,Polen,34,7
+EU,Polen,35,9
+EU,Polen,36,9
+EU,Polen,37,10
+EU,Polen,38,10
+EU,Polen,39,9
+EU,Polen,40,5
+EU,Polen,41,8
+EU,Polen,42,5
+EU,Polen,44,5
+EU,Polen,45,5
+EU,Polen,46,5
+EU,Polen,47,5
+EU,Polen,48,6
+EU,Polen,49,4
+EU,Polen,50,3
+EU,Polen,51,3
+EU,Polen,52,3
+EU,Polen,53,3
+EU,Polen,54,3
+EU,Polen,55,1
+EU,Polen,56,2
+EU,Polen,57,3
+EU,Polen,58,2
+EU,Polen,59,2
+EU,Polen,60,1
+EU,Polen,61,1
+EU,Polen,63,1
+EU,Polen,64,4
+EU,Polen,65,3
+EU,Polen,66,5
+EU,Polen,67,3
+EU,Polen,68,5
+EU,Polen,69,5
+EU,Polen,70,5
+EU,Polen,71,5
+EU,Polen,72,7
+EU,Polen,73,6
+EU,Polen,74,7
+EU,Polen,75,6
+EU,Polen,76,8
+EU,Polen,77,5
+EU,Polen,78,5
+EU,Polen,80,5
+EU,Polen,81,6
+EU,Polen,82,5
+EU,Polen,83,6
+EU,Polen,84,7
+EU,Polen,85,4
+EU,Polen,86,4
+EU,Polen,87,5
+EU,Polen,88,4
+EU,Polen,90,5
+EU,Polen,91,5
+EU,Polen,92,5
+EU,Polen,93,5
+EU,Polen,94,5
+EU,Polen,95,5
+EU,Polen,96,6
+EU,Polen,97,2
+EU,Polen,98,5
+EU,Polen,99,5
+EU,Portugal,10,1
+EU,Portugal,11,1
+EU,Portugal,12,1
+EU,Portugal,13,1
+EU,Portugal,14,1
+EU,Portugal,15,1
+EU,Portugal,16,1
+EU,Portugal,17,1
+EU,Portugal,18,1
+EU,Portugal,19,1
+EU,Portugal,20,2
+EU,Portugal,21,2
+EU,Portugal,22,2
+EU,Portugal,23,2
+EU,Portugal,24,2
+EU,Portugal,25,2
+EU,Portugal,26,1
+EU,Portugal,27,1
+EU,Portugal,28,2
+EU,Portugal,29,2
+EU,Portugal,30,3
+EU,Portugal,31,3
+EU,Portugal,32,3
+EU,Portugal,33,3
+EU,Portugal,34,3
+EU,Portugal,35,3
+EU,Portugal,36,3
+EU,Portugal,37,2
+EU,Portugal,38,2
+EU,Portugal,40,2
+EU,Portugal,41,2
+EU,Portugal,42,2
+EU,Portugal,43,2
+EU,Portugal,44,2
+EU,Portugal,45,2
+EU,Portugal,46,2
+EU,Portugal,47,2
+EU,Portugal,48,2
+EU,Portugal,49,3
+EU,Portugal,50,4
+EU,Portugal,51,4
+EU,Portugal,52,4
+EU,Portugal,53,4
+EU,Portugal,54,4
+EU,Portugal,60,4
+EU,Portugal,61,4
+EU,Portugal,62,4
+EU,Portugal,63,4
+EU,Portugal,64,4
+EU,Portugal,70,5
+EU,Portugal,71,5
+EU,Portugal,72,5
+EU,Portugal,73,5
+EU,Portugal,74,5
+EU,Portugal,75,5
+EU,Portugal,76,5
+EU,Portugal,77,5
+EU,Portugal,78,5
+EU,Portugal,79,5
+EU,Portugal,80,5
+EU,Portugal,81,5
+EU,Portugal,82,5
+EU,Portugal,83,5
+EU,Portugal,84,5
+EU,Portugal,85,5
+EU,Portugal,86,5
+EU,Portugal,87,5
+EU,Portugal,88,5
+EU,Portugal,89,5
+EU,Rumänien,00,10
+EU,Rumänien,01,3
+EU,Rumänien,02,3
+EU,Rumänien,03,3
+EU,Rumänien,04,3
+EU,Rumänien,06,3
+EU,Rumänien,07,3
+EU,Rumänien,08,3
+EU,Rumänien,12,4
+EU,Rumänien,13,3
+EU,Rumänien,14,4
+EU,Rumänien,20,4
+EU,Rumänien,21,5
+EU,Rumänien,22,5
+EU,Rumänien,23,4
+EU,Rumänien,30,7
+EU,Rumänien,31,8
+EU,Rumänien,32,8
+EU,Rumänien,33,7
+EU,Rumänien,40,1
+EU,Rumänien,41,2
+EU,Rumänien,42,2
+EU,Rumänien,44,3
+EU,Rumänien,50,3
+EU,Rumänien,51,5
+EU,Rumänien,52,6
+EU,Rumänien,53,5
+EU,Rumänien,54,5
+EU,Rumänien,55,1
+EU,Rumänien,60,6
+EU,Rumänien,61,5
+EU,Rumänien,70,6
+EU,Rumänien,71,8
+EU,Rumänien,80,6
+EU,Rumänien,81,5
+EU,Rumänien,82,5
+EU,Rumänien,90,5
+EU,Rumänien,91,4
+EU,Rumänien,92,4
+EU,Schweden,10,5
+EU,Schweden,11,5
+EU,Schweden,12,5
+EU,Schweden,13,5
+EU,Schweden,14,5
+EU,Schweden,15,5
+EU,Schweden,16,5
+EU,Schweden,17,5
+EU,Schweden,18,5
+EU,Schweden,19,5
+EU,Schweden,20,1
+EU,Schweden,21,1
+EU,Schweden,22,1
+EU,Schweden,23,1
+EU,Schweden,24,1
+EU,Schweden,25,2
+EU,Schweden,26,2
+EU,Schweden,27,1
+EU,Schweden,28,2
+EU,Schweden,29,1
+EU,Schweden,30,2
+EU,Schweden,31,2
+EU,Schweden,33,1
+EU,Schweden,34,2
+EU,Schweden,35,2
+EU,Schweden,36,2
+EU,Schweden,37,3
+EU,Schweden,38,3
+EU,Schweden,39,3
+EU,Schweden,40,3
+EU,Schweden,41,3
+EU,Schweden,42,3
+EU,Schweden,43,2
+EU,Schweden,44,2
+EU,Schweden,45,4
+EU,Schweden,46,3
+EU,Schweden,47,3
+EU,Schweden,50,2
+EU,Schweden,51,2
+EU,Schweden,52,3
+EU,Schweden,53,3
+EU,Schweden,54,3
+EU,Schweden,55,2
+EU,Schweden,56,2
+EU,Schweden,57,3
+EU,Schweden,58,3
+EU,Schweden,59,3
+EU,Schweden,60,4
+EU,Schweden,61,4
+EU,Schweden,62,6
+EU,Schweden,63,5
+EU,Schweden,64,5
+EU,Schweden,65,4
+EU,Schweden,66,4
+EU,Schweden,67,5
+EU,Schweden,68,5
+EU,Schweden,69,4
+EU,Schweden,70,4
+EU,Schweden,71,4
+EU,Schweden,72,5
+EU,Schweden,73,5
+EU,Schweden,74,5
+EU,Schweden,75,5
+EU,Schweden,76,5
+EU,Schweden,77,5
+EU,Schweden,78,5
+EU,Schweden,79,5
+EU,Schweden,80,6
+EU,Schweden,81,6
+EU,Schweden,82,6
+EU,Schweden,83,7
+EU,Schweden,84,6
+EU,Schweden,85,7
+EU,Schweden,86,7
+EU,Schweden,87,7
+EU,Schweden,88,7
+EU,Schweden,89,7
+EU,Schweden,90,7
+EU,Schweden,91,7
+EU,Schweden,92,7
+EU,Schweden,93,7
+EU,Schweden,94,8
+EU,Schweden,95,8
+EU,Schweden,96,8
+EU,Schweden,97,8
+EU,Schweden,98,8
+EU,Slowakai,00,10
+EU,Slowakai,02,3
+EU,Slowakai,03,3
+EU,Slowakai,04,4
+EU,Slowakai,06,4
+EU,Slowakai,07,4
+EU,Slowakai,08,4
+EU,Slowakai,09,4
+EU,Slowakai,40,1
+EU,Slowakai,90,2
+EU,Slowakai,91,3
+EU,Slowakai,92,2
+EU,Slowakai,93,2
+EU,Slowakai,94,2
+EU,Slowakai,95,2
+EU,Slowakai,96,3
+EU,Slowakai,97,1
+EU,Slowakai,98,4
+EU,Slowwenien,10,1
+EU,Slowwenien,11,1
+EU,Slowwenien,12,1
+EU,Slowwenien,13,1
+EU,Slowwenien,14,1
+EU,Slowwenien,15,1
+EU,Slowwenien,20,2
+EU,Slowwenien,22,2
+EU,Slowwenien,23,2
+EU,Slowwenien,24,2
+EU,Slowwenien,25,2
+EU,Slowwenien,29,2
+EU,Slowwenien,30,2
+EU,Slowwenien,32,2
+EU,Slowwenien,33,2
+EU,Slowwenien,35,2
+EU,Slowwenien,40,2
+EU,Slowwenien,42,2
+EU,Slowwenien,44,2
+EU,Slowwenien,50,2
+EU,Slowwenien,51,2
+EU,Slowwenien,52,2
+EU,Slowwenien,53,2
+EU,Slowwenien,60,2
+EU,Slowwenien,62,2
+EU,Slowwenien,63,2
+EU,Slowwenien,65,2
+EU,Slowwenien,67,2
+EU,Slowwenien,77,2
+EU,Slowwenien,80,2
+EU,Slowwenien,82,2
+EU,Slowwenien,83,2
+EU,Slowwenien,85,2
+EU,Slowwenien,90,2
+EU,Slowwenien,92,2
+EU,Spanien,01,1
+EU,Spanien,02,6
+EU,Spanien,03,4
+EU,Spanien,04,8
+EU,Spanien,05,5
+EU,Spanien,06,8
+EU,Spanien,07,9
+EU,Spanien,08,1
+EU,Spanien,09,4
+EU,Spanien,10,8
+EU,Spanien,11,9
+EU,Spanien,12,2
+EU,Spanien,13,6
+EU,Spanien,14,8
+EU,Spanien,15,8
+EU,Spanien,16,6
+EU,Spanien,17,2
+EU,Spanien,18,8
+EU,Spanien,19,5
+EU,Spanien,20,2
+EU,Spanien,21,9
+EU,Spanien,22,4
+EU,Spanien,23,8
+EU,Spanien,24,8
+EU,Spanien,25,2
+EU,Spanien,26,4
+EU,Spanien,27,8
+EU,Spanien,28,3
+EU,Spanien,29,8
+EU,Spanien,30,8
+EU,Spanien,31,2
+EU,Spanien,32,8
+EU,Spanien,33,8
+EU,Spanien,34,6
+EU,Spanien,35,10
+EU,Spanien,36,8
+EU,Spanien,37,7
+EU,Spanien,38,10
+EU,Spanien,39,4
+EU,Spanien,40,5
+EU,Spanien,41,8
+EU,Spanien,42,4
+EU,Spanien,43,2
+EU,Spanien,44,4
+EU,Spanien,45,5
+EU,Spanien,46,2
+EU,Spanien,47,4
+EU,Spanien,48,2
+EU,Spanien,49,7
+EU,Spanien,50,2
+EU,Tschechische Republik,00,10
+EU,Tschechische Republik,14,2
+EU,Tschechische Republik,16,2
+EU,Tschechische Republik,19,2
+EU,Tschechische Republik,20,2
+EU,Tschechische Republik,23,2
+EU,Tschechische Republik,25,2
+EU,Tschechische Republik,26,4
+EU,Tschechische Republik,27,4
+EU,Tschechische Republik,28,4
+EU,Tschechische Republik,30,1
+EU,Tschechische Republik,33,1
+EU,Tschechische Republik,35,4
+EU,Tschechische Republik,36,2
+EU,Tschechische Republik,37,6
+EU,Tschechische Republik,38,6
+EU,Tschechische Republik,39,4
+EU,Tschechische Republik,40,3
+EU,Tschechische Republik,41,3
+EU,Tschechische Republik,42,3
+EU,Tschechische Republik,44,4
+EU,Tschechische Republik,45,6
+EU,Tschechische Republik,46,4
+EU,Tschechische Republik,47,4
+EU,Tschechische Republik,48,9
+EU,Tschechische Republik,50,3
+EU,Tschechische Republik,51,4
+EU,Tschechische Republik,53,4
+EU,Tschechische Republik,54,5
+EU,Tschechische Republik,55,4
+EU,Tschechische Republik,56,5
+EU,Tschechische Republik,57,6
+EU,Tschechische Republik,58,5
+EU,Tschechische Republik,59,4
+EU,Tschechische Republik,60,3
+EU,Tschechische Republik,61,3
+EU,Tschechische Republik,64,3
+EU,Tschechische Republik,65,3
+EU,Tschechische Republik,66,3
+EU,Tschechische Republik,67,4
+EU,Tschechische Republik,68,4
+EU,Tschechische Republik,69,4
+EU,Tschechische Republik,70,5
+EU,Tschechische Republik,71,5
+EU,Tschechische Republik,72,5
+EU,Tschechische Republik,73,5
+EU,Tschechische Republik,74,5
+EU,Tschechische Republik,75,6
+EU,Tschechische Republik,76,6
+EU,Tschechische Republik,77,4
+EU,Tschechische Republik,78,5
+EU,Tschechische Republik,79,6
+EU,Ungarn,00,10
+EU,Ungarn,20,2
+EU,Ungarn,21,2
+EU,Ungarn,22,2
+EU,Ungarn,23,2
+EU,Ungarn,24,2
+EU,Ungarn,25,2
+EU,Ungarn,26,2
+EU,Ungarn,27,2
+EU,Ungarn,28,4
+EU,Ungarn,29,1
+EU,Ungarn,30,3
+EU,Ungarn,31,3
+EU,Ungarn,32,3
+EU,Ungarn,33,3
+EU,Ungarn,34,3
+EU,Ungarn,35,4
+EU,Ungarn,36,4
+EU,Ungarn,37,4
+EU,Ungarn,38,4
+EU,Ungarn,39,4
+EU,Ungarn,40,3
+EU,Ungarn,41,3
+EU,Ungarn,42,5
+EU,Ungarn,44,4
+EU,Ungarn,45,4
+EU,Ungarn,46,4
+EU,Ungarn,47,4
+EU,Ungarn,48,4
+EU,Ungarn,49,4
+EU,Ungarn,50,2
+EU,Ungarn,51,2
+EU,Ungarn,52,3
+EU,Ungarn,53,3
+EU,Ungarn,54,3
+EU,Ungarn,55,3
+EU,Ungarn,56,3
+EU,Ungarn,57,3
+EU,Ungarn,58,3
+EU,Ungarn,59,3
+EU,Ungarn,60,2
+EU,Ungarn,61,3
+EU,Ungarn,63,3
+EU,Ungarn,64,3
+EU,Ungarn,65,3
+EU,Ungarn,66,3
+EU,Ungarn,67,3
+EU,Ungarn,68,3
+EU,Ungarn,69,3
+EU,Ungarn,70,3
+EU,Ungarn,71,1
+EU,Ungarn,72,1
+EU,Ungarn,73,1
+EU,Ungarn,74,1
+EU,Ungarn,75,1
+EU,Ungarn,76,1
+EU,Ungarn,77,1
+EU,Ungarn,78,1
+EU,Ungarn,79,1
+EU,Ungarn,80,2
+EU,Ungarn,81,1
+EU,Ungarn,82,1
+EU,Ungarn,83,1
+EU,Ungarn,84,3
+EU,Ungarn,85,3
+EU,Ungarn,86,2
+EU,Ungarn,87,3
+EU,Ungarn,88,3
+EU,Ungarn,89,3
+EU,Ungarn,90,1
+EU,Ungarn,91,1
+EU,Ungarn,92,1
+EU,Ungarn,93,1
+EU,Ungarn,94,1
+EU,Ungarn,95,3
+EU,Ungarn,96,2
+EU,Ungarn,97,4
+EU,Ungarn,98,4
+EU,Ungarn,99,4
+EU,Österreich,00,10
+EU,Österreich,20,4
+EU,Österreich,21,2
+EU,Österreich,22,1
+EU,Österreich,23,1
+EU,Österreich,24,1
+EU,Österreich,25,1
+EU,Österreich,26,2
+EU,Österreich,27,1
+EU,Österreich,28,2
+EU,Österreich,30,1
+EU,Österreich,31,1
+EU,Österreich,32,2
+EU,Österreich,33,1
+EU,Österreich,34,1
+EU,Österreich,35,1
+EU,Österreich,36,1
+EU,Österreich,37,2
+EU,Österreich,38,3
+EU,Österreich,40,1
+EU,Österreich,41,2
+EU,Österreich,42,1
+EU,Österreich,44,1
+EU,Österreich,45,1
+EU,Österreich,46,1
+EU,Österreich,47,1
+EU,Österreich,48,2
+EU,Österreich,49,1
+EU,Österreich,50,1
+EU,Österreich,51,1
+EU,Österreich,52,1
+EU,Österreich,53,1
+EU,Österreich,54,1
+EU,Österreich,55,3
+EU,Österreich,56,3
+EU,Österreich,57,3
+EU,Österreich,60,1
+EU,Österreich,61,1
+EU,Österreich,63,2
+EU,Österreich,64,2
+EU,Österreich,65,3
+EU,Österreich,66,3
+EU,Österreich,67,3
+EU,Österreich,68,3
+EU,Österreich,70,1
+EU,Österreich,71,2
+EU,Österreich,72,2
+EU,Österreich,73,3
+EU,Österreich,74,6
+EU,Österreich,75,6
+EU,Österreich,80,4
+EU,Österreich,81,5
+EU,Österreich,82,5
+EU,Österreich,83,5
+EU,Österreich,84,4
+EU,Österreich,85,4
+EU,Österreich,89,6
+EU,Österreich,90,4
+EU,Österreich,91,4
+EU,Österreich,92,4
+EU,Österreich,93,5
+EU,Österreich,94,6
+EU,Österreich,95,4
+EU,Österreich,96,4
+EU,Österreich,97,4
+EU,Österreich,98,5
+EU,Österreich,99,6
