@@ -226,12 +226,12 @@ def calc_raben(scope: str, dest_country_raw: str, plz2: int, weight: float) -> t
         raben_country = map_to_raben_country_name(dest_country_raw)
 
         df_zone = load_csv("raben_zone_map.csv")
-        must_have_cols(df_zone, ["scope", "country", "plz", "zone"], "raben_zone_map.csv")
+        must_have_cols(df_zone, ["scope", "country", "plz2", "zone"], "raben_zone_map.csv")
         df_zone["scope"] = df_zone["scope"].astype(str).str.upper().str.strip()
         df_zone["country"] = df_zone["country"].astype(str).str.strip()
-        df_zone["plz"] = pd.to_numeric(df_zone["plz"], errors="coerce").astype("Int64")
+        df_zone["plz2"] = pd.to_numeric(df_zone["plz"], errors="coerce").astype("Int64")
 
-        zrow = df_zone[(df_zone["scope"] == scope) & (df_zone["country"] == raben_country) & (df_zone["plz"] == plz2)]
+        zrow = df_zone[(df_zone["scope"] == scope) & (df_zone["country"] == raben_country) & (df_zone["plz2"] == plz2)]
         if zrow.empty:
             return (False, f"Raben: 找不到 {scope} / {raben_country} / PLZ2={plz2} 的 Zone（检查 raben_zone_map.csv）")
         zone = int(zrow.iloc[0]["zone"])
